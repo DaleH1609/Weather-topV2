@@ -1,7 +1,7 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const stationCollection = require('../models/playlist-store.js');
+const stationStore= require('../models/station-store.js');
 
 const station = {
   index(request, response){
@@ -9,8 +9,9 @@ const station = {
     logger.info('Station id = ' + stationId);
     const viewData = {
       title: 'Station',
+      station: stationStore.getStation(stationId),
     };
-    response.render('playlist', viewData);
+    response.render('station', viewData);
   },
 };
 
