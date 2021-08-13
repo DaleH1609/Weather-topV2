@@ -5,6 +5,13 @@
       "title": "Tramore",
       "readings": [
         {
+          "id": "03",
+          "code": "Piano Sonata No. 3",
+          "temp": "Beethoven",
+          "windspeed": "Piano Sonata No. 3",
+          "pressure": "Beethoven"
+        },
+        {
           "id": "04",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
@@ -17,13 +24,6 @@
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
           "pressure": "Beethoven"
-        },
-        {
-          "id": "06",
-          "code": "Piano Sonata No. 3",
-          "temp": "Beethoven",
-          "windspeed": "Piano Sonata No. 3",
-          "pressure": "Beethoven"
         }
       ]
     },
@@ -32,7 +32,7 @@
       "title": "Dunmore",
       "readings": [
         {
-          "id" : "07",
+          "id" : "06",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
