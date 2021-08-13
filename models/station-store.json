@@ -1,22 +1,25 @@
 {
   "stationCollection": [
     {
-      "id": 
+      "id": "01",
       "title": "Tramore",
       "readings": [
         {
+          "id": "04",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
           "pressure": "Beethoven"
         },
         {
+          "id": "05",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
           "pressure": "Beethoven"
         },
         {
+          "id": "06",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
@@ -25,21 +28,25 @@
       ]
     },
     {
+      "id" : "02",
       "title": "Dunmore",
       "readings": [
         {
+          "id" : "07",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
           "pressure": "Beethoven"
         },
         {
+          "id" : "08",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
           "pressure": "Beethoven"
         },
         {
+          "id" : "09",
           "code": "Piano Sonata No. 3",
           "temp": "Beethoven",
           "windspeed": "Piano Sonata No. 3",
