@@ -10,7 +10,7 @@ const dashboard = {
       title: "Weather Top Dashboard",
       station: stationStore.getAllStations(),
     };
-    logger.info('about to render', stationStore.getAllStations)
+    logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
   },
 };
