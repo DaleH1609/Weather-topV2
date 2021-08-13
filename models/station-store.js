@@ -18,7 +18,7 @@ const tramore = {
       pressure:'12'
     },
     {
-      code: '2',
+      code: '3',
       temp:'32',
       windspeed:'200',
       pressure:'12'
@@ -42,7 +42,7 @@ const dunmore = {
       pressure:'12'
     },
     {
-      code: '2',
+      code: '3',
       temp:'32',
       windspeed:'200',
       pressure:'12'
