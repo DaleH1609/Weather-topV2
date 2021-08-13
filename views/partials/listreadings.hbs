@@ -8,11 +8,21 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
-      </td>
-      <td>
-      </td>
-    </tr>
+    {{#each station.readings}}
+      <tr>
+        <td>
+          {{code}}
+        </td>
+        <td>
+          {{temp}}
+        </td>
+        <td>
+          {{windspeed}}
+        </td>
+        <td>
+          {{pressure}}
+        </td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>
