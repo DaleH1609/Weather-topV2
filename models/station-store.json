@@ -1,0 +1,51 @@
+{
+  "stationCollection": [
+    {
+      "id": 
+      "title": "Tramore",
+      "readings": [
+        {
+          "code": "Piano Sonata No. 3",
+          "temp": "Beethoven",
+          "windspeed": "Piano Sonata No. 3",
+          "pressure": "Beethoven"
+        },
+        {
+          "code": "Piano Sonata No. 3",
+          "temp": "Beethoven",
+          "windspeed": "Piano Sonata No. 3",
+          "pressure": "Beethoven"
+        },
+        {
+          "code": "Piano Sonata No. 3",
+          "temp": "Beethoven",
+          "windspeed": "Piano Sonata No. 3",
+          "pressure": "Beethoven"
+        }
+      ]
+    },
+    {
+      "title": "Dunmore",
+      "readings": [
+        {
+          "code": "Piano Sonata No. 3",
+          "temp": "Beethoven",
+          "windspeed": "Piano Sonata No. 3",
+          "pressure": "Beethoven"
+        },
+        {
+          "code": "Piano Sonata No. 3",
+          "temp": "Beethoven",
+          "windspeed": "Piano Sonata No. 3",
+          "pressure": "Beethoven"
+        },
+        {
+          "code": "Piano Sonata No. 3",
+          "temp": "Beethoven",
+          "windspeed": "Piano Sonata No. 3",
+          "pressure": "Beethoven"
+        }
+      ]
+    }
+  ]
+}
