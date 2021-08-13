@@ -1,7 +1,7 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const stationStore= require('../models/station-store.js');
+const stationStore = require('../models/station-store.js');
 
 const station = {
   index(request, response){
