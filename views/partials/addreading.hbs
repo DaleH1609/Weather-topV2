@@ -1,12 +1,24 @@
 <form class="ui stacked segment form" action="/playlist/{{playlist.id}}/addsong" method="POST">
-  <div class="two fields">
+  <div class="five fields">
     <div class="field">
-      <label>Title</label>
-      <input placeholder="Title" type="text" name="title">
+      <label>Code</label>
+      <input placeholder="Title" type="int" name="code">
     </div>
     <div class="field">
-      <label>Artist</label>
-      <input placeholder="Artist" type="text" name="artist">
+      <label>Temp</label>
+      <input placeholder="Artist" type="int" name="temp">
+    </div>
+    <div class="field">
+      <label>Wind Speed</label>
+      <input placeholder="Artist" type="double" name="windspeed">
+    </div>
+    <div class="field">
+      <label>Pressure</label>
+      <input placeholder="Artist" type="int" name="pressure">
+    </div>
+    <div class="field">
+      <label>Wind direction</label>
+      <input placeholder="Artist" type="int" name="winddirection">
     </div>
   </div>
   <button class="ui blue submit button">Add Song</button>
