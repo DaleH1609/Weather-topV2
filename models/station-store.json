@@ -10,7 +10,7 @@
           "temp": 0.5,
           "windspeed": 2.5,
           "pressure": 1002,
-          "windDirection": 90
+          "winddirection": 90
         },
         {
           "id": "04",
@@ -18,7 +18,7 @@
           "temp": 6,
           "windspeed": 2,
           "pressure": 1004,
-          "windDirection": 96
+          "winddirection": 96
         },
         {
           "id": "05",
@@ -26,7 +26,7 @@
           "temp": 8,
           "windspeed": 1,
           "pressure": 1005,
-          "windDirection": 101
+          "winddirection": 101
         }
       ]
     },
@@ -36,24 +36,19 @@
       "readings": [
         {
           "id" : "06",
-          "code": "Piano Sonata No. 3",
-          "temp": "Beethoven",
-          "windspeed": "Piano Sonata No. 3",
-          "pressure": "Beethoven"
+          "code": 700,
+          "temp": 8,
+          "windspeed": 1,
+          "pressure": 999,
+          "winddirection": 98
         },
         {
           "id" : "07",
-          "code": "Piano Sonata No. 3",
-          "temp": "Beethoven",
-          "windspeed": "Piano Sonata No. 3",
-          "pressure": "Beethoven"
-        },
-        {
-          "id" : "08",
-          "code": "Piano Sonata No. 3",
-          "temp": "Beethoven",
-          "windspeed": "Piano Sonata No. 3",
-          "pressure": "Beethoven"
+          "code": 200,
+          "temp": 0.5,
+          "windspeed": 3.5,
+          "pressure": 1000,
+          "winddirection": 102
         }
       ]
     }
