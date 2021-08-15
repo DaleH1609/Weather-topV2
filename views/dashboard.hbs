@@ -1,10 +1,5 @@
 {{> menu id="dashboard"}}
 
-{{#each station}}
-  <section class="ui segment">
-    <h2 class="ui header">
-      {{title}}
-    </h2>
-    <a href="/station/{{id}}"> View </a>
+<section class="ui segment">
+  {{> liststations}}
 </section>
- {{/each}}

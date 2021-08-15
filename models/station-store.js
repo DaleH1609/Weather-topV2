@@ -15,6 +15,10 @@ stationCollection: require('./station-store.json').stationCollection,
     _.remove(station.readings, { id: readingId });
   },
   
+  removeStation(id){
+    _.remove(this.stationCollection, { id: id });
+},
+  
   getStation(id) {
     return _.find(this.stationCollection, { id: id });
   },
