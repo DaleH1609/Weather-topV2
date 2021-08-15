@@ -12,7 +12,7 @@ stationCollection: require('./station-store.json').stationCollection,
   
   removeReading(id, readingId){
     const station = this.getStation(id);
-    _.remove(station.readings, {id: readingId });
+    _.remove(station.readings, { id: readingId });
   },
   
   getStation(id) {
