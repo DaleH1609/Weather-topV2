@@ -19,9 +19,13 @@ stationCollection: require('./station-store.json').stationCollection,
     _.remove(this.stationCollection, { id: id });
   },
   
-  addSong(id, reading) {
+  addStation(station) {
+  this.stationCollection.push(station);
+  },
+  
+  addReading(id, reading) {
     const station = this.getStation(id);
-    station.reading.push(reading);
+    station.readings.push(reading);
   },
   
   getStation(id) {

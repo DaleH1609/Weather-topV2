@@ -1,5 +1,7 @@
 "use strict";
 
+const uuid = require('uuid');
+
 const logger = require("../utils/logger");
 const stationStore = require('../models/station-store.js')
 
@@ -12,6 +14,16 @@ const dashboard = {
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
+  },
+  
+  addStation(request, response) {
+    const newStation = {
+      id: uuid.v1(),
+      title: request.body.title,
+      readings: [],
+    };
+    stationStore.addStation(newStation);
+    response.redirect('/dashboard');
   },
   
   deleteStation(request, response) {

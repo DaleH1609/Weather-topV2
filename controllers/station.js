@@ -1,7 +1,10 @@
 'use strict';
 
+const uuid = require('uuid');
+
 const logger = require('../utils/logger');
 const stationStore = require('../models/station-store.js');
+
 
 const station = {
   index(request, response){
@@ -18,6 +21,7 @@ const station = {
     const stationId = request.params.id;
     const station = stationStore.getStation(stationId);
     const newReading = {
+      id: uuid.v1(),
       code: request.body.code,
       temp: request.body.temp,
       windspeed: request.body.windspeed,
