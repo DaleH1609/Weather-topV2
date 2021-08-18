@@ -16,7 +16,10 @@ const station = {
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),
-      latestTemp: latestTemp
+      stationSummary : {
+        latestTemp: stationAnalytics.getLatestTemp(station),
+        latestPressure: stationAnalytics.getLatestPressure(station)
+      }
     };
     response.render('station', viewData);
   },
