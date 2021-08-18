@@ -9,10 +9,12 @@ const stationStore = require('../models/station-store.js');
 const station = {
   index(request, response){
     const stationId = request.params.id;
-    logger.debug('Station id = ' + stationId);
+    logger.debug('Station id = ' + stationId)
+    const latestTemp = stationAnalytics.getLatestTemp(station);
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),
+      latestTemp: latestTemp
     };
     response.render('station', viewData);
   },
