@@ -4,6 +4,7 @@ const uuid = require('uuid');
 
 const logger = require('../utils/logger');
 const stationStore = require('../models/station-store.js');
+const stationAnalytics = require('../utils/station-analytics.js');
 
 
 const station = {
@@ -11,6 +12,7 @@ const station = {
     const stationId = request.params.id;
     logger.debug('Station id = ' + stationId)
     const latestTemp = stationAnalytics.getLatestTemp(station);
+    console.log(latestTemp);
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),
