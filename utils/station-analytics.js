@@ -7,7 +7,7 @@ const stationAnalytics = {
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-       latestTemp = station.readings[station.readings.size - 1].temp;
+       latestTemp = station.readings[station.reading.size - 1].temp;
        }
     return latestTemp;
   }
