@@ -6,8 +6,14 @@ const stationAnalytics = {
 
   getLatestTemp(station) {
     console.log('3£33333333333')
-    console.log((station ))
-   station = 0
+    if (station == '01'){
+      station = 1
+    }
+    console.log(station)
+    
+    
+    station =1
+   
     let latestTemp = (stationStore.stationCollection[0].readings[station].temp )
   
     //let latestTemp = null;
