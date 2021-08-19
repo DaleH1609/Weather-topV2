@@ -1,7 +1,5 @@
 "use strict";
 
-const stationStore = require('../models/station-store.json');
-
 const stationAnalytics = {
 
   getLatestTemp(station) {
