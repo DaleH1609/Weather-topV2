@@ -11,6 +11,8 @@ const stationAnalytics = {
        }
     return latestTemp;
   },
+  
+  
 
   
   getLatestPressure(station) {
