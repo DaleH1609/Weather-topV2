@@ -5,13 +5,16 @@ const stationStore = require('../models/station-store.json');
 const stationAnalytics = {
 
   getLatestTemp(station) {
-    let latestTemp = null;
-    if (station != undefined &&
-      station.readings != undefined &&
-      station.readings.length > 0){
-     latestTemp = station.readings[station.reading.length - 1].temp;
-       }
-    return 5;
+    let lowestTemp = null;
+    if (station.readings.length > 0) {
+      lowestTemp = station.songs[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        if (station.readings[i].temp < lowestTemp.temp) {
+          lowestTemp = station.readings[i];
+        }
+      }
+    }
+    return lowestTemp;
   },
   
   getLatestPressure(station) {
