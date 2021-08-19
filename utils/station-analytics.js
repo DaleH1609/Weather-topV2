@@ -5,23 +5,13 @@ const stationStore = require('../models/station-store.json');
 const stationAnalytics = {
 
   getLatestTemp(station) {
-    let value = 2 ;
-    console.log('3£33333333333')
-    
-    console.log(station)
-    
-    
-    
-   
-    let latestTemp = (stationStore.stationCollection[0].readings[value].temp )
-  
-    //let latestTemp = null;
-    //if (station != undefined &&
-      //station.readings != undefined &&
-      //station.readings.length > 0){
-       //latestTemp = station.readings[0].temp;
-       //}
-    return latestTemp;
+    let latestTemp = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+     latestTemp = station.readings[station.reading.length - 1].temp;
+       }
+    return 5;
   },
   
   getLatestPressure(station) {
@@ -29,7 +19,7 @@ const stationAnalytics = {
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-       latestPressure = station.readings[station.reading.size - 1].pressure;
+       latestPressure = station.readings[station.reading.length - 1].pressure;
        }
     return latestPressure;
   }

@@ -19,8 +19,7 @@ const station = {
       title: 'Station',
       station: stationStore.getStation(stationId),
       stationSummary : {
-        latestTemp: stationAnalytics.getLatestTemp(stationId),
-        //latestTemp:25,
+        latestTemp: stationAnalytics.getLatestTemp(station),
         latestPressure: stationAnalytics.getLatestPressure(station)
       }
     };
