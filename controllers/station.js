@@ -12,7 +12,9 @@ const station = {
     const stationId = request.params.id;
     logger.debug('Station id = ' + stationId)
     const latestTemp = stationAnalytics.getLatestTemp(station);
+    const latestPressure = stationAnalytics.getLatestPressure(station);
     console.log(latestTemp);
+    console.log(latestPressure);
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),
