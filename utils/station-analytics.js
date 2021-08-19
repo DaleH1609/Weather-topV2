@@ -3,24 +3,22 @@
 const stationAnalytics = {
 
   getLatestTemp(station) {
-    let lowestTemp = null;
-    if (station.readings.length > 0) {
-      lowestTemp = station.readings[0];
-      for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temp < lowestTemp.temp) {
-          lowestTemp = station.readings[i];
-        }
-      }
-    }
-    return lowestTemp;
+    let latestTemp = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+       latestTemp = station.readings[station.readings.length-1].temp;
+       }
+    return latestTemp;
   },
+
   
   getLatestPressure(station) {
     let latestPressure = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-       latestPressure = station.readings[station.reading.length - 1].pressure;
+       latestPressure = station.readings[station.readings.length-1].pressure;
        }
     return latestPressure;
   }

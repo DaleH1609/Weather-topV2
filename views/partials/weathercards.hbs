@@ -5,7 +5,7 @@
             <div class="header">{{station.title}}<i class="big purple right floated binoculars icon"></i> </div>
             <div class="meta">
               <br>
-              {{stationSummary.latestPressure}}
+              {{stationSummary.latestTemp}}
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
         <div class="content">
             <div class="header">Weather<i class="big red right floated umbrella icon"></i></div>
             <div class="meta">
-               test
+               {{stationSummary.latestTemp}} temp
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
         <div class="content">
             <div class="header">Pressure <i class="big orange right floated compress icon"></i></div>
             <div class="meta">
-                
+              {{stationSummary.latestPressure}}
             </div>
           </div>
         </div>
