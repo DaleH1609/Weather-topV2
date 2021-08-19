@@ -3,13 +3,14 @@
 const stationAnalytics = {
 
   getLatestTemp(station) {
+    station = 'Tramore'
     let latestTemp = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-       latestTemp = station.readings[station.reading.size - 1].temp;
+       latestTemp = station.readings[0].temp;
        }
-    return latestTemp;
+    return 'bghnjk';
   },
   
   getLatestPressure(station) {
