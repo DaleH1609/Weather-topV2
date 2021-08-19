@@ -7,7 +7,7 @@ const stationAnalytics = {
   getLatestTemp(station) {
     let lowestTemp = null;
     if (station.readings.length > 0) {
-      lowestTemp = station.songs[0];
+      lowestTemp = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
         if (station.readings[i].temp < lowestTemp.temp) {
           lowestTemp = station.readings[i];
