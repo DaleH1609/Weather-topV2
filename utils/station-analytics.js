@@ -6,22 +6,17 @@ const stationAnalytics = {
 
   getLatestTemp(station) {
     console.log('3£33333333333')
-    console.log(station)
-    if (station == '01'){
-      station =1
-    }
-    if (station == '00'){
-      station = 0
-    }
-    console.log(stationStore.stationCollection[0].title['Dunmore'])
+    console.log((station ))
+   station = 0
+    let latestTemp = (stationStore.stationCollection[0].readings[station].temp )
   
-    let latestTemp = null;
-    if (station != undefined &&
-      station.readings != undefined &&
-      station.readings.length > 0){
-       latestTemp = station.readings[0].temp;
-       }
-    return stationStore;
+    //let latestTemp = null;
+    //if (station != undefined &&
+      //station.readings != undefined &&
+      //station.readings.length > 0){
+       //latestTemp = station.readings[0].temp;
+       //}
+    return latestTemp;
   },
   
   getLatestPressure(station) {
