@@ -6,7 +6,14 @@ const stationAnalytics = {
 
   getLatestTemp(station) {
     console.log('3£33333333333')
-    console.log(stationStore.stationCollection.id)
+    console.log(station)
+    if (station == '01'){
+      station =1
+    }
+    if (station == '00'){
+      station = 0
+    }
+    console.log(stationStore.stationCollection[0].title['Dunmore'])
   
     let latestTemp = null;
     if (station != undefined &&
