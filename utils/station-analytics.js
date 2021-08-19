@@ -1,16 +1,20 @@
 "use strict";
 
+const stationStore = require('../models/station-store.json');
+
 const stationAnalytics = {
 
   getLatestTemp(station) {
-    station = 'Tramore'
+    console.log('3£33333333333')
+    console.log(stationStore.stationCollection.id)
+  
     let latestTemp = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
        latestTemp = station.readings[0].temp;
        }
-    return 'bghnjk';
+    return stationStore;
   },
   
   getLatestPressure(station) {
@@ -25,3 +29,4 @@ const stationAnalytics = {
 };
 
 module.exports = stationAnalytics;
+  
