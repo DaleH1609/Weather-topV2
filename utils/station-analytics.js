@@ -5,16 +5,15 @@ const stationStore = require('../models/station-store.json');
 const stationAnalytics = {
 
   getLatestTemp(station) {
+    let value = 2 ;
     console.log('3£33333333333')
-    if (station == '01'){
-      station = 1
-    }
+    
     console.log(station)
     
     
-    station =1
+    
    
-    let latestTemp = (stationStore.stationCollection[0].readings[station].temp )
+    let latestTemp = (stationStore.stationCollection[0].readings[value].temp )
   
     //let latestTemp = null;
     //if (station != undefined &&
