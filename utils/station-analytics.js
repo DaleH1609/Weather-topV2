@@ -12,7 +12,15 @@ const stationAnalytics = {
     return latestTemp;
   },
   
-  
+  celsiusToFahrenheit(station){
+    let celsius = station.readings[station.readings.length-1].temp;
+    if(station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+      celsius = celsius * 1.8 + 32;
+    }
+    return celsius;
+  },
 
   
   getLatestPressure(station) {

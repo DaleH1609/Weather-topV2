@@ -14,6 +14,7 @@ const station = {
     const station = stationStore.getStation(stationId);
     const latestTemp = stationAnalytics.getLatestTemp(station);
     const latestPressure = stationAnalytics.getLatestPressure(station);
+    const celciusToFahrenheit
     console.log(latestTemp);
     console.log(latestPressure);
     const viewData = {
@@ -22,6 +23,7 @@ const station = {
       stationSummary : {
         latestTemp: stationAnalytics.getLatestTemp(station),
         latestPressure: stationAnalytics.getLatestPressure(station)
+  
       }
     };
     response.render('station', viewData);
