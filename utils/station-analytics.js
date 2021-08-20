@@ -12,6 +12,36 @@ const stationAnalytics = {
     return latestTemp;
   },
   
+  windSpeedLatest(station){
+    let windSpeed = station.readings[station.readings.length-1].windspeed;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+      if (windSpeed <=1 ){
+        return 0;
+      }
+      if (windSpeed >1 && windSpeed <=5){
+        return 0;
+      }
+      if (windSpeed >1 && windSpeed <=11){
+        return 0;
+      }
+      if (windSpeed >1 && windSpeed <=5){
+        return 0;
+      }
+      if (windSpeed >1 && windSpeed <=5){
+        return 0;
+      }
+      if (windSpeed >1 && windSpeed <=5){
+        return 0;
+      }
+      if (windSpeed >1 && windSpeed <=5){
+        return 0;
+      }
+    
+    
+    
+  
   celsiusToFahrenheit(station){
     let celsius = station.readings[station.readings.length-1].temp;
     if(station != undefined &&
