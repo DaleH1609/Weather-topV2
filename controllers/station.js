@@ -24,7 +24,7 @@ const station = {
       stationSummary : {
         latestTemp: stationAnalytics.getLatestTemp(station),
         latestPressure: stationAnalytics.getLatestPressure(station),
-        celciusToFahrenheit: stationAnalytics.celciusToFahrenheit(station)
+        celsiusToFahrenheit: stationAnalytics.celsiusToFahrenheit(station)
       }
     };
     response.render('station', viewData);
