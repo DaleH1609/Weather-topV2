@@ -17,52 +17,52 @@ const stationAnalytics = {
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-      if (windCompass >= 348.77 && windCompass < 11.25){
+      if (windCompass >= 348.77 && windCompass <= 11.25){
         return 'North';
       }
-      else if(windCompass >= 11.25 && windCompass < 33.75){
+      else if(windCompass > 11.25 && windCompass <= 33.75){
         return 'North North East'
       }
-      else if(windCompass >= 33.75 && windCompass < 56.25){
+      else if(windCompass > 33.75 && windCompass <= 56.25){
         return 'North East'
       }
-      else if(windCompass >= 56.25 && windCompass < 78.75){
+      else if(windCompass > 56.25 && windCompass <= 78.75){
         return 'East North East'
       }
-      else if(windCompass >= 78.75 && windCompass < 101.25){
+      else if(windCompass > 78.75 && windCompass <= 101.25){
         return 'East'
       }
-      else if(windCompass >= 101.25 && windCompass < 123.75){
+      else if(windCompass > 101.25 && windCompass <= 123.75){
         return 'East South East'
       }
-      else if(windCompass >= 123.75 && windCompass < 146.25){
+      else if(windCompass > 123.75 && windCompass <= 146.25){
         return 'South East'
       }
-      else if(windCompass >= 146.25 && windCompass < 168.75){
+      else if(windCompass > 146.25 && windCompass <= 168.75){
         return 'South South East'
       }
-      else if(windCompass >= 168.75 && windCompass < 191.25){
+      else if(windCompass > 168.75 && windCompass <= 191.25){
         return 'South'
       }
-      else if(windCompass >= 191.25 && windCompass < 213.75){
+      else if(windCompass > 191.25 && windCompass <= 213.75){
         return 'South South West'
       }
-      else if(windCompass >= 213.75 && windCompass < 236.25){
+      else if(windCompass > 213.75 && windCompass <= 236.25){
         return 'South West'
       }
-      else if(windCompass >= 236.25 && windCompass < 258.75){
+      else if(windCompass > 236.25 && windCompass <= 258.75){
         return 'West South West'
       }
-      else if(windCompass >= 258.75 && windCompass < 281.25){
+      else if(windCompass > 258.75 && windCompass <= 281.25){
         return 'West'
       }
-      else if(windCompass >= 281.25 && windCompass < 303.75){
+      else if(windCompass > 281.25 && windCompass <= 303.75){
         return 'West North West'
       }
-      else if(windCompass >= 303.75 && windCompass < 33.75){
+      else if(windCompass > 303.75 && windCompass <= 326.25){
         return 'North West'
       }
-      else if(windCompass >= 326.25 && windCompass < 33.75){
+      else if(windCompass > 326.25 && windCompass <= 348.75){
         return 'North North West'
       }
     }
