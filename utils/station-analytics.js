@@ -12,6 +12,65 @@ const stationAnalytics = {
     return latestTemp;
   },
   
+  windCompass(station){
+    let windCompass = station.readings[station.readings.length-1].winddirection;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+      if (windCompass >= 348.77 && windCompass < 11.25){
+        return 'North';
+      }
+      else if(windCompass >= 11.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 33.75 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 56.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 78.75 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 101.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 123.75 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 146.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 168.75 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 191.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 213.75 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 236.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 258.75 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 236.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 236.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 236.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      else if(windCompass >= 236.25 && windCompass < 33.75){
+        return 'North North East'
+      }
+      }
+  },
+  
   windSpeedLatest(station){
     let windSpeed = station.readings[station.readings.length-1].windspeed;
     if (station != undefined &&
