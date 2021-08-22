@@ -12,6 +12,8 @@
         <div class="content">
             <div class="header">Weather<i class="big red right floated umbrella icon"></i></div>
             <div class="meta">
+              <br>
+              <br>
                {{stationSummary.latestTemp}} C
               <br>
               <br>
@@ -23,12 +25,12 @@
         <div class="content">
             <div class="header">Temp <i class="big blue right floated temperature high icon"></i></div>
             <div class="meta">
-               <br>
+              <br>
               {{stationSummary.latestTemp}}
               <br>
              Min: {{stationSummary.getMinTemp.temp}}
               <br>
-            Max: {{stationSummary.getMaxTemp.temp}}
+             Max: {{stationSummary.getMaxTemp.temp}}
             </div>
         </div>
     </div>
@@ -36,10 +38,15 @@
         <div class="content">
             <div class="header">Wind<i class="big green right floated wind icon"></i></div>
             <div class="meta">
+              <br>
                 {{stationSummary.windSpeedLatest}} bft
               <br>
               <br>
                {{stationSummary.windCompass}}
+              <br>
+             Max: {{stationSummary.getMaxWindspeed.windspeed}}
+              <br>
+             Min: {{stationSummary.getMinWindspeed.windspeed}}
             </div>
         </div>
     </div>
@@ -49,7 +56,9 @@
             <div class="meta">
               {{stationSummary.latestPressure}} hpa
               <br>
-              {{stationSummary.getMaxPressure.pressure}}
+             Max: {{stationSummary.getMaxPressure.pressure}} 
+              <br>
+             Min: {{stationSummary.getMinPressure.pressure}} 
             </div>
           </div>
         </div>

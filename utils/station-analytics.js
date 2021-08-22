@@ -72,6 +72,36 @@ const stationAnalytics = {
     return minPressure;
   },
   
+  getMinWindspeed(station){
+  let minWindspeed = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0) {
+      minWindspeed = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        if (station.readings[i].windspeed < minWindspeed.windspeed) {
+          minWindspeed = station.readings[i];
+        }
+      }
+    }
+    return minWindspeed;
+  },
+  
+  getMaxWindspeed(station){
+  let maxWindspeed = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0) {
+      maxWindspeed = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        if (station.readings[i].windspeed > maxWindspeed.windspeed) {
+          maxWindspeed = station.readings[i];
+        }
+      }
+    }
+    return maxWindspeed;
+  },
+  
   
   windCompass(station){
     let windCompass = station.readings[station.readings.length-1].winddirection;
