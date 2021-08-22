@@ -28,18 +28,18 @@ const stationAnalytics = {
   },
   
   getMaxTemp(station){
-  let minTemp = null;
+  let maxTemp = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0) {
-      minTemp = station.readings[0];
+      maxTemp = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temp < minTemp.temp) {
-          minTemp = station.readings[i];
+        if (station.readings[i].temp > maxTemp.temp) {
+          maxTemp = station.readings[i];
         }
       }
     }
-    return minTemp;
+    return maxTemp;
   },
   
   windCompass(station){
