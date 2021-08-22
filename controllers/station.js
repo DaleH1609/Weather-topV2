@@ -17,11 +17,13 @@ const station = {
     const celciusToFahrenheit = stationAnalytics.celsiusToFahrenheit(station);
     const windSpeedLatest = stationAnalytics.windSpeedLatest(station);
     const windCompass = stationAnalytics.windCompass(station);
+    const getMinTemp = stationAnalytics.getMinTemp(station);
     console.log(latestTemp);
     console.log(latestPressure);
     console.log(celciusToFahrenheit);
     console.log(windSpeedLatest);
     console.log(windCompass);
+    console.log(getMinTemp);
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),
@@ -30,7 +32,8 @@ const station = {
         latestPressure: stationAnalytics.getLatestPressure(station),
         celsiusToFahrenheit: stationAnalytics.celsiusToFahrenheit(station),
         windSpeedLatest: stationAnalytics.windSpeedLatest(station),
-        windCompass: stationAnalytics.windCompass(station)
+        windCompass: stationAnalytics.windCompass(station),
+        getMinTemp: stationAnalytics.getMinTemp(station)
       }
     };
     response.render('station', viewData);
