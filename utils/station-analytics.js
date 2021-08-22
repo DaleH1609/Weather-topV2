@@ -27,6 +27,21 @@ const stationAnalytics = {
     return minTemp;
   },
   
+  getMaxTemp(station){
+  let minTemp = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0) {
+      minTemp = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        if (station.readings[i].temp < minTemp.temp) {
+          minTemp = station.readings[i];
+        }
+      }
+    }
+    return minTemp;
+  },
+  
   windCompass(station){
     let windCompass = station.readings[station.readings.length-1].winddirection;
     if (station != undefined &&
