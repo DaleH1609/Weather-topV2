@@ -42,20 +42,36 @@ const stationAnalytics = {
     return maxTemp;
   },
   
-  getMaxTemp(station){
-  let maxTemp = null;
+  getMaxPressure(station){
+  let maxPressure = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0) {
-      maxTemp = station.readings[0];
+      maxPressure = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temp > maxTemp.temp) {
-          maxTemp = station.readings[i];
+        if (station.readings[i].temp > maxPressure.temp) {
+          maxPressure = station.readings[i];
         }
       }
     }
-    return maxTemp;
+    return maxPressure;
   },
+  
+  getMinPressure(station){
+  let minPressure = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0) {
+      minPressure = station.readings[0];
+      for (let i = 1; i < station.readings.length; i++) {
+        if (station.readings[i].temp < minPressure.temp) {
+          minPressure = station.readings[i];
+        }
+      }
+    }
+    return minPressure;
+  },
+  
   
   windCompass(station){
     let windCompass = station.readings[station.readings.length-1].winddirection;
