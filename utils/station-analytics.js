@@ -102,7 +102,6 @@ const stationAnalytics = {
     return maxWindspeed;
   },
   
-  
   windCompass(station){
     let windCompass = station.readings[station.readings.length-1].winddirection;
     if (station != undefined &&
