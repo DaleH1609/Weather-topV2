@@ -200,7 +200,7 @@ const stationAnalytics = {
         return 11;
     }
   },
-
+  
   celsiusToFahrenheit(station){
     let celsius = station.readings[station.readings.length-1].temp;
     if(station != undefined &&
@@ -211,7 +211,6 @@ const stationAnalytics = {
     return celsius;
   },
 
-  
   getLatestPressure(station) {
     let latestPressure = null;
     if (station != undefined &&
