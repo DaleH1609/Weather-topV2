@@ -23,6 +23,7 @@ const station = {
     const getMinPressure = stationAnalytics.getMinPressure(station);
     const getMaxWindspeed = stationAnalytics.getMaxWindspeed(station);
     const getMinWindspeed = stationAnalytics.getMinWindspeed(station);
+    const chillLatest = stationAnalytics.chillLatest(station);
     console.log(latestTemp);
     console.log(latestPressure);
     console.log(celciusToFahrenheit);
@@ -34,6 +35,7 @@ const station = {
     console.log(getMinPressure);
     console.log(getMaxWindspeed);
     console.log(getMinWindspeed);
+    console.log(chillLatest);
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),
@@ -48,7 +50,8 @@ const station = {
         getMaxPressure: stationAnalytics.getMaxTemp(station),
         getMinPressure: stationAnalytics.getMinTemp(station),
         getMaxWindspeed: stationAnalytics.getMaxWindspeed(station),
-        getMinWindspeed: stationAnalytics.getMinWindspeed(station)
+        getMinWindspeed: stationAnalytics.getMinWindspeed(station),
+        chillLatest: stationAnalytics.chillLatest(station)
       }
     };
     response.render('station', viewData);
