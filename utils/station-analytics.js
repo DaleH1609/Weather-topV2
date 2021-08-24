@@ -12,6 +12,18 @@ const stationAnalytics = {
     return latestTemp;
   },
   
+   chillLatest(station) {
+    let windSpeed = station.readings[station.readings.length-1].windspeed;
+    let cTemp = station.readings
+    let chillLatest = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+     const  chillLatest = 13.12 + 0.6215
+       }
+    return chillLatest
+  },
+  
   getMinTemp(station){
   let minTemp = null;
     if (station != undefined &&
@@ -200,6 +212,16 @@ const stationAnalytics = {
         return 11;
     }
   },
+
+  getLatestPressure(station) {
+    let latestPressure = null;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+       latestPressure = station.readings[station.readings.length-1].pressure;
+       }
+    return latestPressure;
+  },
   
   celsiusToFahrenheit(station){
     let celsius = station.readings[station.readings.length-1].temp;
@@ -210,17 +232,67 @@ const stationAnalytics = {
     }
     return celsius;
   },
-
-  getLatestPressure(station) {
-    let latestPressure = null;
-    if (station != undefined &&
+  
+  windTrend(station){
+   if(station != undefined &&
       station.readings != undefined &&
-      station.readings.length > 0){
-       latestPressure = station.readings[station.readings.length-1].pressure;
-       }
-    return latestPressure;
-  }
+      station.readings.length >= 3){
+    let Trend1 = station.readings[station.readings.length-1].windspeed;
+    let Trend2 = station.readings[station.readings.length-2].windspeed;
+    let Trend3 = station.readings[station.readings.length-3].windspeed;
+    if(Trend1 > Trend2 && Trend2 > Trend3){
+      return "arrow up icon";
+    }
+    else if(Trend1 < Trend2 && Trend2 < Trend3){
+      return "arrow down icon";
+    }
+    else{
+      return "arrows alternate horizontal icon";
+    }
+   }
+ },
+  
+  pressureTrend(station){
+   if(station != undefined &&
+      station.readings != undefined &&
+      station.readings.length >= 3){
+    let Trend1 = station.readings[station.readings.length-1].pressure;
+    let Trend2 = station.readings[station.readings.length-2].pressure;
+    let Trend3 = station.readings[station.readings.length-3].pressure;
+    if(Trend1 > Trend2 && Trend2 > Trend3){
+      return "arrow up icon";
+    }
+    else if(Trend1 < Trend2 && Trend2 < Trend3){
+      return "arrow down icon";
+    }
+    else{
+      return "arrows alternate horizontal icon";
+    }
+   }
+ },
+  
+  TempTrend(station){
+   if(station != undefined &&
+      station.readings != undefined &&
+      station.readings.length >= 3){
+    let Trend1 = station.readings[station.readings.length-1].temp;
+    let Trend2 = station.readings[station.readings.length-2].temp;
+    let Trend3 = station.readings[station.readings.length-3].temp;
+    if(Trend1 > Trend2 && Trend2 > Trend3){
+      return "arrow up icon";
+    }
+    else if(Trend1 < Trend2 && Trend2 < Trend3){
+      return "arrow down icon";
+    }
+    else{
+      return "arrows alternate horizontal icon";
+    }
+   }
+ }
 };
+
+
+
 
 module.exports = stationAnalytics;
   
