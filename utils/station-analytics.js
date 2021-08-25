@@ -13,10 +13,11 @@ const stationAnalytics = {
   },
   
   weatherLatest(station){
-    let weatherName = station.readings[station.readings.length-1].code;
+    let weatherName = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
+     weatherName = station.readings[station.readings.length-1].code;
       if(weatherName == 100){
         return "Clear";
       }
@@ -45,10 +46,11 @@ const stationAnalytics = {
   },
   
   weatherIcon(station){
-    let weatherIcon = station.readings[station.readings.length-1].code;
+    let weatherIcon = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
+     weatherIcon = station.readings[station.readings.length-1].code;
       if(weatherIcon == 100){
         return "sun icon";
       }
@@ -178,10 +180,11 @@ const stationAnalytics = {
   },
   
   windCompass(station){
-    let windCompass = station.readings[station.readings.length-1].winddirection;
+    let windCompass = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
+      windCompass = station.readings[station.readings.length-1].winddirection;
       if (windCompass >= 348.77 && windCompass <= 11.25){
         return 'North';
       }
@@ -234,10 +237,11 @@ const stationAnalytics = {
   },
   
   windSpeedLatest(station){
-    let windSpeed = station.readings[station.readings.length-1].windspeed;
+    let windSpeed = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
+      windSpeed = station.readings[station.readings.length-1].windspeed;
       if (windSpeed <=1 ){
         return 0;
       }
@@ -287,10 +291,11 @@ const stationAnalytics = {
   },
   
   celsiusToFahrenheit(station){
-    let celsius = station.readings[station.readings.length-1].temp;
+    let celsius = null;
     if(station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
+      station.readings[station.readings.length-1].temp;
       celsius = celsius * 1.8 + 32;
     }
     return celsius;

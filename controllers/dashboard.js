@@ -20,6 +20,8 @@ const dashboard = {
     const newStation = {
       id: uuid.v1(),
       title: request.body.title,
+      longitude: request.body.longitude,
+      latitude: request.body.latitude,
       readings: [],
     };
     stationStore.addStation(newStation);
