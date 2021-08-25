@@ -10,9 +10,11 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
+    let stations = stationStore.getUserStations(loggedInUser.id);
     const viewData = {
       title: "Weather Top Dashboard",
-      station: stationStore.getUserStations(loggedInUser.id),
+      stations: stationStore.getUserStations(loggedInUser.id),
+      
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
