@@ -11,6 +11,10 @@ const userStore = {
   getAllUsers() {
     return this.store.findAll(this.collection);
   },
+  
+  getUserByPassword(password) {
+    return this.store.findOneBy(this.collection, { password: password });
+  },
 
   addUser(user) {
     this.store.add(this.collection, user);

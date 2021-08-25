@@ -20,7 +20,7 @@ stationCollection: require('./station-store.json').stationCollection,
   },
   
   getUserStations(userid){
-    return this.store.findBy(this.collection , { userid: userid });
+    return this.store.findBy(this.collection, { userid: userid });
   },
   
   addStation(station) {

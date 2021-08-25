@@ -42,15 +42,15 @@ const accounts = {
 
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
-    if (user) {
-      response.cookie('playlist', user.email);
+    const password = userstore.getUserByPassword(request.body.password);
+    if (user&&password) {
+      response.cookie("playlist", user.email);
       logger.info(`logging in ${user.email}`);
-      response.redirect('/dashboard');
+      response.redirect("/dashboard");
     } else {
-      response.redirect('/login');
+      response.redirect("/login");
     }
   },
-
   getCurrentUser(request) {
     const userEmail = request.cookies.playlist;
     return userstore.getUserByEmail(userEmail);
