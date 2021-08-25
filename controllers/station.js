@@ -28,7 +28,7 @@ const station = {
     const tempTrend = stationAnalytics.tempTrend(station);
     const pressureTrend = stationAnalytics.pressureTrend(station);
     const weatherIcon = stationAnalytics.weatherIcon(station);
-    const 
+    const weatherLatest = stationAnalytics.weatherLatest(station);
     console.log(latestTemp);
     console.log(latestPressure);
     console.log(celciusToFahrenheit);
@@ -44,6 +44,8 @@ const station = {
     console.log(windTrend);
     console.log(tempTrend);
     console.log(pressureTrend);
+    console.log(weatherLatest);
+    console.log(weatherIcon);
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),
@@ -62,7 +64,9 @@ const station = {
         chillLatest: stationAnalytics.chillLatest(station),
         windTrend: stationAnalytics.windTrend(station),
         tempTrend: stationAnalytics.tempTrend(station),
-        pressureTrend: stationAnalytics.pressureTrend(station)
+        pressureTrend: stationAnalytics.pressureTrend(station),
+        weatherLatest: stationAnalytics.weatherLatest(station),
+        weatherIcon: stationAnalytics.weatherIcon(station)
       }
     };
     response.render('station', viewData);
