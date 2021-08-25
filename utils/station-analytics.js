@@ -19,7 +19,6 @@ const stationAnalytics = {
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-      chillLatest = Math.pow(chillLatest);
     }
     return chillLatest;
   },
@@ -271,7 +270,7 @@ const stationAnalytics = {
    }
  },
   
-  TempTrend(station){
+  tempTrend(station){
    if(station != undefined &&
       station.readings != undefined &&
       station.readings.length >= 3){
