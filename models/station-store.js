@@ -19,6 +19,10 @@ stationCollection: require('./station-store.json').stationCollection,
     _.remove(this.stationCollection, { id: id });
   },
   
+  getUserStations(userid){
+    return this.store.findBy(this.collection , { userid: userid });
+  },
+  
   addStation(station) {
   this.stationCollection.push(station);
   },
