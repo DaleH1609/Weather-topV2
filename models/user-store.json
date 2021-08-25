@@ -20,6 +20,13 @@
       "email": "dale@123.ie",
       "password": "123",
       "id": "20da0050-05da-11ec-8cc2-a339e071ff24"
+    },
+    {
+      "firstName": "Dale",
+      "lastName": "Healy",
+      "email": "dale1234",
+      "password": "dale1234",
+      "id": "9b4dd290-05de-11ec-b970-09901c79b2d3"
     }
   ]
 }

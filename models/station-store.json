@@ -6,7 +6,7 @@
       "title": "Tramore",
       "readings": [
         {
-          "id": "03",
+          "id": "02",
           "code": 800,
           "temp": 0.5,
           "windspeed": 2.5,
@@ -14,7 +14,7 @@
           "winddirection": 90
         },
         {
-          "id": "04",
+          "id": "03",
           "code": 600,
           "temp": 6,
           "windspeed": 2,
@@ -22,7 +22,7 @@
           "winddirection": 96
         },
         {
-          "id": "05",
+          "id": "04",
           "code": 700,
           "temp": 8,
           "windspeed": 1,
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id" : "02",
+      "id" : "05",
       "userid" : "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "title": "Dunmore",
       "readings": [
