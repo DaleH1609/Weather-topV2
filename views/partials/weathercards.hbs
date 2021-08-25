@@ -27,6 +27,7 @@
               Max: {{stationSummary.getMaxTemp.temp}} C
               <br>
               Trend: <i class="big blue {{stationSummary.tempTrend}}""></i>
+              <br>
             </div>
         </div>
     </div>
@@ -46,8 +47,9 @@
               Feels like:
               <br> 
                   {{stationSummary.chillLatest}}
+              <br> 
+                <i class="big orange {{stationSummary.pressureTrend}}""></i>
             </div>
-            
         </div>
     </div>
     <div class="card">
@@ -60,6 +62,8 @@
              Max: {{stationSummary.getMaxPressure.pressure}} 
               <br>
              Min: {{stationSummary.getMinPressure.pressure}} 
+              <br>
+              <i class="big orange {{stationSummary.pressureTrend}}""></i>
             </div>
           </div>
         </div>
