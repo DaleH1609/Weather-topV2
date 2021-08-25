@@ -12,6 +12,70 @@ const stationAnalytics = {
     return latestTemp;
   },
   
+  weatherLatest(station){
+    let weatherName = station.readings[station.readings.length-1].code;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+      if(weatherName == 100){
+        return "Clear";
+      }
+      else if(weatherName == 200){
+        return "Partial Clouds";
+      }
+      else if(weatherName == 300){
+        return "Cloudy";
+      }
+      else if(weatherName == 400){
+        return "Light showers";
+      }
+      else if(weatherName == 500){
+        return "Heavy showers";
+      }
+      else if(weatherName == 600){
+        return "Rain";
+      }
+      else if(weatherName == 700){
+        return "Snow";
+      }
+      else if(weatherName == 800){
+        return "Thunder";
+      }
+    }
+  },
+  
+  weatherIcon(station){
+    let weatherIcon = station.readings[station.readings.length-1].code;
+    if (station != undefined &&
+      station.readings != undefined &&
+      station.readings.length > 0){
+      if(weatherIcon == 100){
+        return "sun icon";
+      }
+      else if(weatherIcon == 200){
+        return "cloud sun icon";
+      }
+      else if(weatherIcon == 300){
+        return "cloud icon";
+      }
+      else if(weatherIcon == 400){
+        return "cloud sun rain icon";
+      }
+      else if(weatherIcon == 500){
+        return "cloud showers heavy icon";
+      }
+      else if(weatherIcon == 600){
+        return "cloud rain icon";
+      }
+      else if(weatherIcon == 700){
+        return "snowflake icon";
+      }
+      else if(weatherIcon == 800){
+        return "poo storm icon";
+      }
+    }
+  },
+  
    chillLatest(station) {
     let windSpeed = station.readings[station.readings.length-1].windspeed;
     let cTemp = station.readings[station.readings.length-1].temp;

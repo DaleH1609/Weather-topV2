@@ -27,6 +27,8 @@ const station = {
     const windTrend = stationAnalytics.windTrend(station);
     const tempTrend = stationAnalytics.tempTrend(station);
     const pressureTrend = stationAnalytics.pressureTrend(station);
+    const weatherIcon = stationAnalytics.weatherIcon(station);
+    const 
     console.log(latestTemp);
     console.log(latestPressure);
     console.log(celciusToFahrenheit);
