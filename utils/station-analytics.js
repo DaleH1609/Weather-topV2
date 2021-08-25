@@ -79,12 +79,15 @@ const stationAnalytics = {
   },
   
    chillLatest(station) {
-    let windSpeed = station.readings[station.readings.length-1].windspeed;
-    let cTemp = station.readings[station.readings.length-1].temp;
-    let chillLatest = ((13.12 + (0.6215 * cTemp) - (11.37 * (Math.pow(windSpeed, 0.16))) + ((0.3965 * cTemp) + (Math.pow(windSpeed,0.16)))))
+    let windSpeed = null;
+    let cTemp = null;
+    let chillLatest = null;
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
+       chillLatest = ((13.12 + (0.6215 * cTemp) - (11.37 * (Math.pow(windSpeed, 0.16))) + ((0.3965 * cTemp) + (Math.pow(windSpeed,0.16)))))
+       cTemp = station.readings[station.readings.length-1].temp;
+       windSpeed = station.readings[station.readings.length-1].windspeed;
     }
     return chillLatest;
   },
