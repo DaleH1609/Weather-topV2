@@ -2,7 +2,7 @@
   “stationCollection”: [
     {
       “id”: “01”,
-      “userid”: “3ad52697-6d98-4d80-8273-084de55a86c0”,
+      “userid”: “3ad52697-6d98-4d80-8273-084de55a86c0”
       “title”: “Tramore”,
       "longitude": "12",
       "latitude": "12",
@@ -35,7 +35,7 @@
     },
     {
       “id” : “02”,
-      “userid”: “2b6f0989-7b7f-4a38-ad26-aa06b922d751”,
+      “userid”: “2b6f0989-7b7f-4a38-ad26-aa06b922d751”
       “title”: “Dunmore”,
       "longitude": "34",
       "latitude": "32",
