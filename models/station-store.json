@@ -15,6 +15,14 @@
       "longitude": "2",
       "latitude": "2",
       "readings": []
+    },
+    {
+      "id": "11788930-0682-11ec-b0ea-0bd3f87d2a6f",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Woodstown",
+      "longitude": "67",
+      "latitude": "45",
+      "readings": []
     }
   ]
 }
