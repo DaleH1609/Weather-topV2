@@ -1,7 +1,6 @@
 "use strict";
 
 const uuid = require('uuid');
-
 const logger = require("../utils/logger");
 const stationStore = require('../models/station-store.js');
 const accounts = require ('./accounts.js');
@@ -29,6 +28,7 @@ const dashboard = {
       latitude: request.body.latitude,
       readings: [],
     };
+    logger.debug("Creating a new Station", newStation);
     stationStore.addStation(newStation);
     response.redirect('/dashboard');
   },
