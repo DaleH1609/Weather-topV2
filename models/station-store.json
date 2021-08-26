@@ -31,6 +31,14 @@
       "longitude": "67",
       "latitude": "45",
       "readings": []
+    },
+    {
+      "id": "f3deabc0-068b-11ec-af03-f3a548f7161b",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Bray",
+      "longitude": "67",
+      "latitude": "45",
+      "readings": []
     }
   ]
 }
