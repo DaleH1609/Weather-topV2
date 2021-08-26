@@ -1,16 +1,15 @@
-
-  {{#each stations}}
+ {{#each stations}}
 
   <section class="ui stacked segment">
     <h2 class="ui header">
       {{title}}
-              {{#each readings}}
-                <div class="header">{{title}}</div>
-                {{/each}}
-        {{#each readings}}
-                <div class="header">{{latitude}}</div>
-                {{/each}}
-       
+  <div>
+    <a href="/station/{{id}}" class="ui green icon button">
+      <i class="icon folder open"></i>
+    </a>
+  <a href="/dashboard/deletestation/{{id}}" class="ui red icon button">
+      <i class="icon trash"></i>
+    </a>
   </section>
 {{/each}}
 
