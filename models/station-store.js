@@ -7,7 +7,7 @@ const stationStore = {
   store: new JsonStore("./models/station-store.json", {
     stationCollection: []
   }),
-  collection: "playlistCollection",
+  collection: "stationCollection",
 
  getAllStations() {
     return this.stationCollection;

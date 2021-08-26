@@ -2,7 +2,7 @@
   "stationCollection": [
     {
       "id": "01",
-      "userid" : "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Tramore",
       "readings": [
         {
@@ -32,12 +32,12 @@
       ]
     },
     {
-      "id" : "05",
-      "userid" : "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "05",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "title": "Dunmore",
       "readings": [
         {
-          "id" : "06",
+          "id": "06",
           "code": 700,
           "temp": 8,
           "windspeed": 1,
@@ -45,7 +45,7 @@
           "winddirection": 98
         },
         {
-          "id" : "07",
+          "id": "07",
           "code": 200,
           "temp": 0.5,
           "windspeed": 3.5,
@@ -53,6 +53,30 @@
           "winddirection": 102
         }
       ]
+    },
+    {
+      "id": "fa488c40-0633-11ec-b931-ef9ca687923f",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Bray",
+      "longitude": "",
+      "latitude": "",
+      "readings": []
+    },
+    {
+      "id": "fd25bb90-0633-11ec-b931-ef9ca687923f",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Bray",
+      "longitude": "",
+      "latitude": "",
+      "readings": []
+    },
+    {
+      "id": "feedf870-0633-11ec-b931-ef9ca687923f",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Tramore",
+      "longitude": "",
+      "latitude": "",
+      "readings": []
     }
   ]
 }
