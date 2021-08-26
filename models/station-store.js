@@ -4,8 +4,10 @@ const _ = require('lodash');
 const JsonStore = require("./json-store");
 
 const stationStore = {
-
-stationCollection: require('./station-store.json').stationCollection,
+  store: new JsonStore("./models/station-store.json", {
+    stationCollection: []
+  }),
+  collection: "playlistCollection",
 
  getAllStations() {
     return this.stationCollection;
