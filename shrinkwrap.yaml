@@ -6,7 +6,7 @@ dependencies:
   express-handlebars: 5.3.3
   fs-extra: 10.0.0
   lodash: 4.17.21
-  lowdb: 1.0.0
+  lowdb: 2.1.0
   uuid: 8.3.2
   winston: 3.3.3
 devDependencies:
@@ -402,10 +402,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
-  /is-promise/2.2.2:
-    dev: false
-    resolution:
-      integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==
   /is-stream/2.0.1:
     dev: false
     engines:
@@ -442,18 +438,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-N0qPlqfypFx7UHNn4B3lzS/b0uLqt2hmuoa+PpuXNYgozdJYAyauF5Ky0BWVjrxDlMWiT3qN4zPq3vVAfZy7Yg==
-  /lowdb/1.0.0:
+  /lowdb/2.1.0:
     dependencies:
-      graceful-fs: 4.2.8
-      is-promise: 2.2.2
-      lodash: 4.17.21
-      pify: 3.0.0
-      steno: 0.4.4
+      steno: 1.0.0
     dev: false
     engines:
-      node: '>=4'
+      node: ^12.20.0 || ^14.13.1 || >=16.0.0
     resolution:
-      integrity: sha512-2+x8esE/Wb9SQ1F9IHaYWfsC9FIecLOPrK4g17FGEayjUWH172H6nwicRovGvSE2CPZouc2MCIqCI7h9d+GftQ==
+      integrity: sha512-F4Go8/V37gAidTR3c5poyjprOpZSDNSLJVOmI0ny4D4q9rC37OkBhlzX0bqj7LZlT3UIj4FchmZrrSw7qY+eGQ==
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -559,12 +551,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
-  /pify/3.0.0:
-    dev: false
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
   /prettier/2.3.2:
     dev: true
     engines:
@@ -699,12 +685,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
-  /steno/0.4.4:
-    dependencies:
-      graceful-fs: 4.2.8
+  /steno/1.0.0:
     dev: false
     resolution:
-      integrity: sha1-BxEFvfwobmYVwEA8J+nXtdy4Vcs=
+      integrity: sha512-C/KgCvEa1yWnpHmaPjAXrz1yWxh6hs+HvhqqPa71euaQmNi1wr4+WFo57VQxjKKuFl2KqS7gtlrN0oxj2noQLw==
   /streamsearch/0.1.2:
     dev: false
     engines:
@@ -828,10 +812,10 @@ specifiers:
   cookie-parser: ^1.4.5
   express: ^4.17.1
   express-fileupload: ^1.2.1
-  express-handlebars: ^5.3.2
+  express-handlebars: ^5.3.3
   fs-extra: ^10.0.0
   lodash: ^4.17.21
-  lowdb: ^1.0.0
+  lowdb: ^2.1.0
   prettier: ^2.3.0
   uuid: ^8.3.2
   winston: ^3.3.3
