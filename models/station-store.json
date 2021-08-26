@@ -65,6 +65,14 @@
       "longitude": "20",
       "latitude": "10",
       "readings": []
+    },
+    {
+      "id": "3a6c6af0-06af-11ec-99bf-39a88e6ded13",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Tramore",
+      "longitude": "67",
+      "latitude": "45",
+      "readings": []
     }
   ]
 }
