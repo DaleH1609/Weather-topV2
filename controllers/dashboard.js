@@ -23,7 +23,7 @@ const dashboard = {
     const newStation = {
       id: uuid.v1(),
       userid: loggedInUser.id,
-      title: request.body.title,
+      name: request.body.name,
       longitude: request.body.longitude,
       latitude: request.body.latitude,
       readings: [],
