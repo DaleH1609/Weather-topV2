@@ -27,7 +27,8 @@ const stationStore = {
   },
   
   addStation(station) {
-  this.stationCollection.push(station);
+  this.store.add(this.collection, station);
+  this.store.save();
   },
   
   addReading(id, reading) {
