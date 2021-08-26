@@ -1,68 +1,73 @@
 {
   "stationCollection": [
     {
-      "id": "9cdf47c0-067d-11ec-8586-6195b9c301fe",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Bray",
-      "longitude": "32",
-      "latitude": "45",
-      "readings": []
-    },
-    {
-      "id": "b4144a30-067d-11ec-8586-6195b9c301fe",
-      "userid": "ab821370-067d-11ec-8586-6195b9c301fe",
-      "title": "Hello",
-      "longitude": "2",
-      "latitude": "2",
-      "readings": []
-    },
-    {
-      "id": "11788930-0682-11ec-b0ea-0bd3f87d2a6f",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Woodstown",
-      "longitude": "67",
-      "latitude": "45",
-      "readings": []
-    },
-    {
-      "id": "4761ffd0-0683-11ec-b0ea-0bd3f87d2a6f",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Woodstown",
-      "longitude": "67",
-      "latitude": "45",
-      "readings": []
-    },
-    {
-      "id": "f3deabc0-068b-11ec-af03-f3a548f7161b",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Bray",
-      "longitude": "67",
-      "latitude": "45",
-      "readings": []
-    },
-    {
-      "id": "90f5aad0-068c-11ec-881d-3389e3f9a9bd",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Bray",
-      "longitude": "32",
-      "latitude": "45",
-      "readings": []
-    },
-    {
-      "id": "c521ba00-068d-11ec-afc9-494e5cf40c37",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Bray",
-      "longitude": "",
-      "latitude": "",
-      "readings": []
-    },
-    {
-      "id": "a4b7b780-0695-11ec-afc9-494e5cf40c37",
+      "id": "01",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Tramore",
-      "longitude": "67",
-      "latitude": "45",
-      "readings": []
+      "readings": [
+        {
+          "id": "02",
+          "code": 800,
+          "temp": 0.5,
+          "windspeed": 2.5,
+          "pressure": 1002,
+          "winddirection": 90
+        },
+        {
+          "id": "03",
+          "code": 600,
+          "temp": 6,
+          "windspeed": 2,
+          "pressure": 1004,
+          "winddirection": 96
+        },
+        {
+          "id": "04",
+          "code": 700,
+          "temp": 8,
+          "windspeed": 1,
+          "pressure": 1005,
+          "winddirection": 101
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Dunmore",
+      "readings": [
+        {
+          "id": "06",
+          "code": 700,
+          "temp": 8,
+          "windspeed": 1,
+          "pressure": 999,
+          "winddirection": 98
+        },
+        {
+          "id": "07",
+          "code": 200,
+          "temp": 0.5,
+          "windspeed": 3.5,
+          "pressure": 1000,
+          "winddirection": 102
+        }
+      ]
     }
-  ]
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
