@@ -2,10 +2,10 @@
   "stationCollection": [
     {
       "id": "01",
-      "userid" : "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title" : "Tramore",
-      "latitude" : "52.160",
-      "longitude" : "-7.152",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Tramore",
+      "latitude": "52.160",
+      "longitude": "-7.152",
       "readings": [
         {
           "id": "02",
@@ -21,7 +21,7 @@
           "temp": "6",
           "windspeed": "2",
           "pressure": "1004",
-          "windDirection":"96"
+          "windDirection": "96"
         },
         {
           "id": "04",
@@ -29,7 +29,7 @@
           "temp": "8",
           "windspeed": "1",
           "pressure": "1005",
-          "windDirection":"101"
+          "windDirection": "101"
         }
       ]
     },
@@ -37,8 +37,8 @@
       "id": "05",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Dunmore",
-      "latitude" : "52.149",
-      "longitude" : "-6.994",
+      "latitude": "52.149",
+      "longitude": "-6.994",
       "readings": [
         {
           "id": "06",
@@ -46,7 +46,7 @@
           "temp": "8",
           "windspeed": "1",
           "pressure": "999",
-          "windDirection":"98"
+          "windDirection": "98"
         },
         {
           "id": "07",
@@ -54,26 +54,41 @@
           "temp": "0.5",
           "windspeed": "3.5",
           "pressure": "1000",
-          "windDirection":"102"
+          "windDirection": "102"
         }
       ]
+    },
+    {
+      "id": "f1622850-06b2-11ec-8d4b-a5eba1877761",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "tea",
+      "longitude": "",
+      "latitude": "",
+      "readings": []
+    },
+    {
+      "id": "ca59d400-06b3-11ec-bab6-7fb26b7774e1",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "tea",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
+    },
+    {
+      "id": "e2e62910-06b3-11ec-bab6-7fb26b7774e1",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "sausages",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
+    },
+    {
+      "id": "4f501110-06b4-11ec-bab6-7fb26b7774e1",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "sausages",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
