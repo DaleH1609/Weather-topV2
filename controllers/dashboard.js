@@ -14,7 +14,7 @@ const dashboard = {
       stations: stationStore.getUserStations(loggedInUser.id),
       
     };
-    logger.info('about to render', stationStore.getAllStations());
+    logger.info('about to render', stationStore.getUserStations());
     response.render("dashboard", viewData);
   },
   
@@ -23,7 +23,7 @@ const dashboard = {
     const newStation = {
       id: uuid.v1(),
       userid: loggedInUser.id,
-      name: request.body.name,
+      title: request.body.title,
       longitude: request.body.longitude,
       latitude: request.body.latitude,
       readings: [],
