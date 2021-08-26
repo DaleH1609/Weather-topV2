@@ -1,9 +1,9 @@
-"use strict";
+"use strict"
 
-const uuid = require('uuid');
 const logger = require("../utils/logger");
 const stationStore = require('../models/station-store.js');
 const accounts = require ('./accounts.js');
+const uuid = require('uuid');
 
 const dashboard = {
   index(request, response) {
