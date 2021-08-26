@@ -20,6 +20,13 @@
       "email": "john123",
       "password": "123",
       "id": "ab821370-067d-11ec-8586-6195b9c301fe"
+    },
+    {
+      "firstName": "Dale",
+      "lastName": "Healy",
+      "email": "dale@healy.com",
+      "password": "123",
+      "id": "5e135ab0-0680-11ec-b92c-1d8bb215f1cf"
     }
   ]
 }
