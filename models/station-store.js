@@ -18,6 +18,11 @@ const stationStore = {
     _.remove(station.readings, { id: readingId });
   },
   
+   addStation(newStation) {
+  this.store.add(this.collection, newStation);
+  this.store.save();
+  },
+  
   removeStation(id){
     _.remove(this.stationCollection, { id: id });
   },
@@ -25,12 +30,6 @@ const stationStore = {
   getUserStations(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   },
-  
-  addStation(newStation) {
-  this.store.add(this.collection, newStation);
-  this.store.save();
-  },
-  
   
   addReading(id, reading) {
     const station = this.getStation(id);

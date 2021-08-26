@@ -14,7 +14,7 @@ const dashboard = {
       stations: stationStore.getUserStations(loggedInUser.id),
       
     };
-    
+    logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
   },
   
