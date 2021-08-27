@@ -27,6 +27,13 @@
       "email": "dale@healy.com",
       "password": "123",
       "id": "5e135ab0-0680-11ec-b92c-1d8bb215f1cf"
+    },
+    {
+      "firstName": "Thomas",
+      "lastName": "Healy",
+      "email": "t123",
+      "password": "t123",
+      "id": "cbe57ea0-0717-11ec-a8ba-09fb48b0e10e"
     }
   ]
 }
