@@ -97,6 +97,14 @@
       "latitude": "45.6",
       "longitude": "32.6",
       "readings": []
+    },
+    {
+      "id": "168de8d0-0780-11ec-8483-a9bfc2ea0529",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Crk",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
     }
   ]
 }
