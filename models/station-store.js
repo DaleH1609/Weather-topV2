@@ -13,6 +13,11 @@ const stationStore = {
     return this.stationCollection;
   },
   
+  removeAllStations(){
+    this.store.removeAll(this.collection);
+    this.store.save();
+  },
+  
   removeReading(id, readingId){
     const station = this.getStation(id);
     _.remove(station.readings, { id: readingId });
