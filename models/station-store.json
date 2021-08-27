@@ -4,8 +4,8 @@
       "id": "01",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Tramore",
-      "latitude": "52.160",
-      "longitude": "-7.152",
+      "latitude": "52",
+      "longitude": "-7",
       "readings": [
         {
           "id": "02",
@@ -37,8 +37,8 @@
       "id": "05",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Dunmore",
-      "latitude": "52.149",
-      "longitude": "-6.994",
+      "latitude": "52",
+      "longitude": "-6",
       "readings": [
         {
           "id": "06",
@@ -57,6 +57,22 @@
           "windDirection": "102"
         }
       ]
+    },
+    {
+      "id": "038417c0-06f7-11ec-8779-c389c8060e96",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Woodstown",
+      "latitude": "45",
+      "longitude": "67",
+      "readings": []
+    },
+    {
+      "id": "58bfdb20-06f7-11ec-8779-c389c8060e96",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Hello",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
     }
   ]
 }
