@@ -34,6 +34,13 @@
       "email": "t123",
       "password": "t123",
       "id": "cbe57ea0-0717-11ec-a8ba-09fb48b0e10e"
+    },
+    {
+      "firstName": "James",
+      "lastName": "w",
+      "email": "j123",
+      "password": "j123",
+      "id": "11d23250-077c-11ec-a47d-3bfc2fe045ea"
     }
   ]
 }

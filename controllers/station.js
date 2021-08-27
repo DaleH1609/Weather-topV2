@@ -93,8 +93,7 @@ const station = {
   logger.debug('Deleteing reading ${readingId} from Stations ${stationId}');
   stationStore.removeReading(stationId, readingId);
   response.redirect('/station/' + stationId);
-}
-  
+ } 
 };
 
 module.exports = station;
