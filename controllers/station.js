@@ -70,21 +70,19 @@ const station = {
       }
     };
     response.render('station', viewData);
-    
   },
   
   addReading(request, response) {
     const stationId = request.params.id;
+    const station = stationStore.getStation(stationId);
     const newReading = {
       id: uuid.v1(),
-      title:request.body.title,
       code: request.body.code,
       temp: request.body.temp,
       windspeed: request.body.windspeed,
       pressure: request.body.pressure,
       winddirection: request.body.winddirection
     };
-    logger.debug("New Reading = ", newReading);
     stationStore.addReading(stationId, newReading);
     response.redirect('/station/' + stationId);
   },
