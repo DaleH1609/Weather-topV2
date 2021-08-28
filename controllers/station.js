@@ -9,7 +9,7 @@ const stationAnalytics = require('../utils/station-analytics.js');
 
 const station = {
   index(request, response){
-    const stationId = request.params.id;
+    let stationId = request.params.id;
     logger.debug('Station id = ' + stationId)
     const station = stationStore.getStation(stationId);
     const latestTemp = stationAnalytics.getLatestTemp(station);
