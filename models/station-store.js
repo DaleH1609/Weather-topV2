@@ -13,9 +13,8 @@ const stationStore = {
    return this.store.findAll(this.collection);
   },
   
-  removeAllStations(id){
-    const readings =this,getStation(id)
-    this.store.remove(this.collection,readings);
+  removeAllStations(){
+    this.store.removeAll(this.collection);
     this.store.save();
   },
   
@@ -43,7 +42,7 @@ const stationStore = {
   },
   
   getStation(id) {
-    return _.find(this.stationCollection, { id: id });
+    return _.find(this.collection, { id: id });
   },
 };
 

@@ -7,9 +7,10 @@ const uuid = require('uuid');
 
 const dashboard = {
   index(request, response) {
-    
+    const stationId = request.params.id;
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
+    const stations = stationStore.getUserStations(loggedInUser.id);
     const viewData = {
       title: "Weather Top Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id),
