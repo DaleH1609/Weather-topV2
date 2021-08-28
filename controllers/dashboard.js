@@ -7,12 +7,12 @@ const uuid = require('uuid');
 
 const dashboard = {
   index(request, response) {
-    const stationId = request.params.id;
+    
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: "Weather Top Dashboard",
-      station: stationStore.getUserStations(loggedInUser.id),
+      stations: stationStore.getUserStations(loggedInUser.id),
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);

@@ -10,11 +10,12 @@ const stationStore = {
   collection: "stationCollection",
 
  getAllStations() {
-    return this.stationCollection;
+   return this.store.findAll(this.collection);
   },
   
-  removeAllStations(){
-    this.store.removeAll(this.collection);
+  removeAllStations(id){
+    const readings =this,getStation(id)
+    this.store.remove(this.collection,readings);
     this.store.save();
   },
   
