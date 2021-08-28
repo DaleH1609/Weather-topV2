@@ -9,7 +9,7 @@ const stationAnalytics = require('../utils/station-analytics.js');
 
 const station = {
   index(request, response){
-    let stationId = request.params.id;
+    const stationId = request.params.id;
     logger.debug('Station id = ' + stationId)
     const station = stationStore.getStation(stationId);
     const latestTemp = stationAnalytics.getLatestTemp(station);
@@ -75,15 +75,16 @@ const station = {
   
   addReading(request, response) {
     const stationId = request.params.id;
-    const station = stationStore.getStation(stationId);
     const newReading = {
       id: uuid.v1(),
+      title:request.body.title,
       code: request.body.code,
       temp: request.body.temp,
       windspeed: request.body.windspeed,
       pressure: request.body.pressure,
       winddirection: request.body.winddirection
     };
+    logger.debug("New Reading = ", newReading);
     stationStore.addReading(stationId, newReading);
     response.redirect('/station/' + stationId);
   },

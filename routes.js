@@ -16,14 +16,14 @@ router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
 
 router.get("/dashboard", dashboard.index);
+router.post('/station/:id/addreading', station.addReading);
+router.get('/station/:id/deletereading/:readingid', station.deleteReading);
 router.post('/dashboard/addstation', dashboard.addStation);
 router.get('/dashboard/deletestation/:id', dashboard.deleteStation);
 
-
 router.get("/about", about.index);
 router.get('/station/:id', station.index);
-router.post('/station/:id/addreading', station.addReading);
-router.get('/station/:id/deletereading/:readingid', station.deleteReading);
+
 
 
 
