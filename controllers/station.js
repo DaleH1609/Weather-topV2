@@ -70,6 +70,7 @@ const station = {
       }
     };
     response.render('station', viewData);
+    
   },
   
   addReading(request, response) {
