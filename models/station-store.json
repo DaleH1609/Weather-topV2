@@ -75,14 +75,6 @@
       "readings": []
     },
     {
-      "id": "a2368510-06fc-11ec-8cee-bdf344c255d7",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Bray",
-      "latitude": "",
-      "longitude": "",
-      "readings": []
-    },
-    {
       "id": "d2a82580-0717-11ec-a8ba-09fb48b0e10e",
       "userid": "cbe57ea0-0717-11ec-a8ba-09fb48b0e10e",
       "title": "Tramore",
@@ -96,14 +88,6 @@
       "title": "Bray",
       "latitude": "45.6",
       "longitude": "32.6",
-      "readings": []
-    },
-    {
-      "id": "168de8d0-0780-11ec-8483-a9bfc2ea0529",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Crk",
-      "latitude": "",
-      "longitude": "",
       "readings": []
     }
   ]
