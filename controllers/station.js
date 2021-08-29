@@ -81,7 +81,7 @@ const station = {
       temp: request.body.temp,
       windspeed: request.body.windspeed,
       pressure: request.body.pressure,
-      winddirection: request.body.winddirection
+      windDirection: request.body.windDirection
     };
     stationStore.addReading(stationId, newReading);
     response.redirect('/station/' + stationId);

@@ -1,5 +1,5 @@
 {
-  "stationCollection":[
+  "stationCollection": [
     {
       "id": "01",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
@@ -57,6 +57,14 @@
           "windDirection": "102"
         }
       ]
+    },
+    {
+      "id": "eb5914e0-085c-11ec-993b-e39af9592510",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Johns Park Boi!",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
     }
   ]
 }
