@@ -29,23 +29,6 @@ const station = {
     const pressureTrend = stationAnalytics.pressureTrend(station);
     const weatherIcon = stationAnalytics.weatherIcon(station);
     const weatherLatest = stationAnalytics.weatherLatest(station);
-    console.log(latestTemp);
-    console.log(latestPressure);
-    console.log(celciusToFahrenheit);
-    console.log(windSpeedLatest);
-    console.log(windCompass);
-    console.log(getMinTemp);
-    console.log(getMaxTemp);
-    console.log(getMaxPressure);
-    console.log(getMinPressure);
-    console.log(getMaxWindspeed);
-    console.log(getMinWindspeed);
-    console.log(chillLatest);
-    console.log(windTrend);
-    console.log(tempTrend);
-    console.log(pressureTrend);
-    console.log(weatherLatest);
-    console.log(weatherIcon);
     const viewData = {
       title: 'Station',
       station: stationStore.getStation(stationId),

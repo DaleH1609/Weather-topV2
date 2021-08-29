@@ -30,33 +30,48 @@
           "windspeed": "1",
           "pressure": "1005",
           "windDirection": "101"
+        },
+        {
+          "id": "07171050-08a9-11ec-a785-dbf041b8b2d3",
+          "code": "300",
+          "temp": "12",
+          "windspeed": "12",
+          "pressure": "12",
+          "windDirection": "12"
         }
       ]
     },
     {
-      "id": "05",
+      "id": "de701210-08a7-11ec-bf75-39fd59048ca4",
+      "userid": "a2992970-08a7-11ec-b9a9-abbf0d577a59",
+      "title": "Tramore",
+      "latitude": "45",
+      "longitude": "32.6",
+      "readings": []
+    },
+    {
+      "id": "0d4120b0-08a9-11ec-a785-dbf041b8b2d3",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Dunmore",
-      "latitude": "52",
-      "longitude": "-6",
-      "readings": [
-        {
-          "id": "06",
-          "code": "700",
-          "temp": "8",
-          "windspeed": "1",
-          "pressure": "999",
-          "windDirection": "98"
-        },
-        {
-          "id": "07",
-          "code": "800",
-          "temp": "0.5",
-          "windspeed": "3.5",
-          "pressure": "1000",
-          "windDirection": "102"
-        }
-      ]
+      "title": "Piano Sonata No. 4",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
+    },
+    {
+      "id": "112ba150-08a9-11ec-a785-dbf041b8b2d3",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Piano Sonata No. 4",
+      "latitude": "45.6",
+      "longitude": "32.6",
+      "readings": []
+    },
+    {
+      "id": "2b8b56d0-08a9-11ec-a785-dbf041b8b2d3",
+      "userid": "2446d5c0-08a9-11ec-a785-dbf041b8b2d3",
+      "title": "Bray",
+      "latitude": "45.6",
+      "longitude": "32.6",
+      "readings": []
     }
   ]
 }
