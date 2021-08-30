@@ -42,6 +42,7 @@ const stationStore = {
   
   addReading(id, reading) {
     const station = this.getStation(id);
+    date: new Date().toISOString;
     station.readings.push(reading);
     this.store.save();
   },

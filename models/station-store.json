@@ -14,6 +14,7 @@
           "windspeed": "3.5",
           "pressure": "1002",
           "windDirection": "90"
+          "date": 
         },
         {
           "id": "03",
@@ -57,22 +58,6 @@
           "windDirection": "102"
         }
       ]
-    },
-    {
-      "id": "6abbfc50-08aa-11ec-8953-a9602e18c3d0",
-      "userid": "5bd34e00-08aa-11ec-8953-a9602e18c3d0",
-      "title": "Tramore",
-      "latitude": "",
-      "longitude": "",
-      "readings": []
-    },
-    {
-      "id": "8773d2a0-08aa-11ec-bfdb-e718be0741d7",
-      "userid": "8176c5b0-08aa-11ec-bfdb-e718be0741d7",
-      "title": "Hello",
-      "latitude": "45.6",
-      "longitude": "32.6",
-      "readings": []
     }
   ]
 }
