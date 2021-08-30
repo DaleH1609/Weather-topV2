@@ -15,14 +15,15 @@ const dashboard = {
     const station = stationStore.getStation(stationId);
     const stations = stationStore.getUserStations(loggedInUser.id);
     function compare( a, b ) {
-    if ( a.last_nom < b.last_nom ){
+    if ( a.stationTitle < b.stationTitle){
     return -1;
     }
-    if ( a.last_nom > b.last_nom ){
+    if ( a.stationTitle > b.stationTitle ){
     return 1;
     }
     return 0;
     }
+    /*
     for (let station in stations){
       station.getMaxTemp = stationAnalytics.getMaxTemp(station);
       station.getMinTemp = stationAnalytics.getMinTemp(station);
@@ -38,6 +39,7 @@ const dashboard = {
       station.celsiusToFahrenheit = stationAnalytics.celsiusToFahrenheit(station);
       station.windSpeedLatest = stationAnalytics.windSpeedLatest(station);
     }
+    */
     const viewData = {
       title: "Weather Top Dashboard",
       stations: stations.sort(compare)
