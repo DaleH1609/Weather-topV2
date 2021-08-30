@@ -60,7 +60,7 @@ const station = {
     const station = stationStore.getStation(stationId);
     const newReading = {
       id: uuid.v1(),
-      date: new Date(),
+      date: new Date().toISOString(),
       code: request.body.code,
       temp: request.body.temp,
       windspeed: request.body.windspeed,
