@@ -60,22 +60,6 @@
           "pressure": "1000",
           "windDirection": "102",
           "date": "2021-03-25T07:20:42.138z"
-        },
-        {
-          "id": "1e9fbde0-09a2-11ec-bcda-dde60a32e9cd",
-          "code": "200",
-          "temp": "",
-          "windspeed": "",
-          "pressure": "",
-          "windDirection": ""
-        },
-        {
-          "id": "42835d20-09a2-11ec-8999-b96029ff8e1f",
-          "code": "200",
-          "temp": "",
-          "windspeed": "12",
-          "pressure": "",
-          "windDirection": ""
         }
       ]
     }
