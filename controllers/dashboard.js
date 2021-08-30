@@ -31,7 +31,20 @@ const dashboard = {
     }
     const viewData = {
       title: "Weather Top Dashboard",
-      stations: stations
+      stations: stations,
+      getMaxTemp: stationAnalytics.getMaxTemp(station),
+      station.getMinTemp = stationAnalytics.getMaxTemp(station);
+      station.geMaxPressure = stationAnalytics.getMaxTemp(station);
+      station.geMinPressure = stationAnalytics.getMaxTemp(station);
+      station.geMaxWindSpeed = stationAnalytics.getMaxTemp(station);
+      station.geMinWindSpeed = stationAnalytics.getMaxTemp(station);
+      station.windTrend = stationAnalytics.getMaxTemp(station);
+      station.pressureTrend = stationAnalytics.getMaxTemp(station);
+      station.tempTrend = stationAnalytics.getMaxTemp(station);
+      station.getWeatherLatest = stationAnalytics.getMaxTemp(station);
+      station.geWeatherIcon = stationAnalytics.getMaxTemp(station);
+      station.celsiusToFahrenheit = stationAnalytics.getMaxTemp(station);
+      station.windSpeedLatest = stationAnalytics.getMaxTemp(station);
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);

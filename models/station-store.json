@@ -38,8 +38,121 @@
           "windspeed": "",
           "pressure": "10007",
           "windDirection": ""
+        },
+        {
+          "id": "46327e70-09ce-11ec-aac7-ad7ed70a2cf0",
+          "date": "2021-08-30T20:10:08.728Z",
+          "code": "200",
+          "temp": "",
+          "windspeed": "",
+          "pressure": "",
+          "windDirection": ""
         }
-      ]
+      ],
+      "getMaxTemp": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "getMinTemp": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "geMaxPressure": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "geMinPressure": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "geMaxWindSpeed": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "geMinWindSpeed": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "windTrend": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "pressureTrend": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "tempTrend": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "getWeatherLatest": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "geWeatherIcon": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "celsiusToFahrenheit": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      },
+      "windSpeedLatest": {
+        "id": "04",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "1005",
+        "windDirection": "101"
+      }
     },
     {
       "id": "05",
@@ -64,7 +177,111 @@
           "pressure": "1000",
           "windDirection": "102"
         }
-      ]
+      ],
+      "getMaxTemp": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "getMinTemp": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "geMaxPressure": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "geMinPressure": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "geMaxWindSpeed": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "geMinWindSpeed": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "windTrend": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "pressureTrend": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "tempTrend": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "getWeatherLatest": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "geWeatherIcon": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "celsiusToFahrenheit": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      },
+      "windSpeedLatest": {
+        "id": "06",
+        "code": "700",
+        "temp": "8",
+        "windspeed": "1",
+        "pressure": "999",
+        "windDirection": "98"
+      }
     }
   ]
 }
