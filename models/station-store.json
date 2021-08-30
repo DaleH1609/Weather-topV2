@@ -111,6 +111,15 @@
           "windspeed": "3.5",
           "pressure": "1000",
           "windDirection": "102"
+        },
+        {
+          "id": "2123e830-09d8-11ec-81fa-6b1804992fb2",
+          "date": "2021-08-30T21:20:41.524Z",
+          "code": "163373",
+          "temp": "",
+          "windspeed": "",
+          "pressure": "",
+          "windDirection": ""
         }
       ],
       "getMaxTemp": {
