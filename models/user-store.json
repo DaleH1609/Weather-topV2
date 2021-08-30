@@ -13,34 +13,6 @@
       "email": "marge@simpson.com",
       "password": "secret",
       "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
-    },
-    {
-      "firstName": "Dale",
-      "lastName": "Healy",
-      "email": "andy",
-      "password": "123",
-      "id": "a2992970-08a7-11ec-b9a9-abbf0d577a59"
-    },
-    {
-      "firstName": "darren",
-      "lastName": "one",
-      "email": "darren",
-      "password": "one",
-      "id": "2446d5c0-08a9-11ec-a785-dbf041b8b2d3"
-    },
-    {
-      "firstName": "Thomas",
-      "lastName": "Healy",
-      "email": "123",
-      "password": "123",
-      "id": "5bd34e00-08aa-11ec-8953-a9602e18c3d0"
-    },
-    {
-      "firstName": "Dale",
-      "lastName": "Healy",
-      "email": "dale@123.ie",
-      "password": "123",
-      "id": "8176c5b0-08aa-11ec-bfdb-e718be0741d7"
     }
   ]
 }
