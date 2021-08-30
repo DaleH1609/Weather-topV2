@@ -57,16 +57,15 @@ const station = {
   
   addReading(request, response) {
     const stationId = request.params.id;
-    date: new Date().toISOString;
     const station = stationStore.getStation(stationId);
     const newReading = {
       id: uuid.v1(),
+      date: new Date(),
       code: request.body.code,
       temp: request.body.temp,
       windspeed: request.body.windspeed,
       pressure: request.body.pressure,
       windDirection: request.body.windDirection,
-      date: request.body.date
     };
     stationStore.addReading(stationId, newReading);
     response.redirect('/station/' + stationId);
