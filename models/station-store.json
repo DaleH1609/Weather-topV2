@@ -6,15 +6,17 @@
       "title": "Bray",
       "latitude": "",
       "longitude": "",
-      "readings": []
-    },
-    {
-      "id": "546508b0-09b9-11ec-a412-ff93177c2518",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Tramore",
-      "latitude": "",
-      "longitude": "",
-      "readings": []
+      "readings": [
+        {
+          "id": "ebbbf1e0-09bb-11ec-adc1-af1390acfaa3",
+          "date": "2021-08-30T17:58:46.014Z",
+          "code": "200",
+          "temp": "12",
+          "windspeed": "12",
+          "pressure": "12",
+          "windDirection": "12"
+        }
+      ]
     }
   ]
 }

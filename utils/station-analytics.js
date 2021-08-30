@@ -129,7 +129,7 @@ const stationAnalytics = {
       station.readings.length > 0) {
       maxPressure = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temp > maxPressure.temp) {
+        if (station.readings[i].pressure > maxPressure.pressure) {
           maxPressure = station.readings[i];
         }
       }
@@ -144,7 +144,7 @@ const stationAnalytics = {
       station.readings.length > 0) {
       minPressure = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].temp < minPressure.temp) {
+        if (station.readings[i].pressure < minPressure.pressure) {
           minPressure = station.readings[i];
         }
       }
