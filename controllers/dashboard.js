@@ -9,8 +9,26 @@ const dashboard = {
   index(request, response) {
     const stationId = request.params.id;
     logger.info("dashboard rendering");
+    const getAllStations = stationStore.getAllStations();
     const loggedInUser = accounts.getCurrentUser(request);
     const stations = stationStore.getUserStations(loggedInUser.id);
+    
+    for (let i =0; i < allStations.length; i++){
+      const station = allStations[i];
+      station.getMaxTemp
+      station.getMinTemp
+      station.geMaxPressure
+      station.geMinPressure
+      station.geMaxWindSpeed
+      station.geMinWindSpeed
+      station.windTrend
+      station.pressureTrend
+      station.tempTrend
+      station.getWeatherLatest
+      station.geWeatherIcon
+      station.celsiusToFahrenheit
+      station.windSpeedLatest
+    }
     const viewData = {
       title: "Weather Top Dashboard",
       stations: stations
