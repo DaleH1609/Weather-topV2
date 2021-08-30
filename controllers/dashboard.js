@@ -13,7 +13,7 @@ const dashboard = {
     const stations = stationStore.getUserStations(loggedInUser.id);
     const viewData = {
       title: "Weather Top Dashboard",
-      stations: stationStore.getUserStations(loggedInUser.id),
+      stations: stations.sort(stations)
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
