@@ -13,8 +13,8 @@
           "temp": "0.5",
           "windspeed": "3.5",
           "pressure": "1002",
-          "windDirection": "90"
-          "date": 
+          "windDirection": "90",
+          "date": "2021-04-25T07:20:42.138z"
         },
         {
           "id": "03",
@@ -22,7 +22,8 @@
           "temp": "6",
           "windspeed": "2",
           "pressure": "1004",
-          "windDirection": "96"
+          "windDirection": "96",
+          "date": "2021-05-25T07:20:42.138z"
         },
         {
           "id": "04",
@@ -30,7 +31,8 @@
           "temp": "8",
           "windspeed": "1",
           "pressure": "1005",
-          "windDirection": "101"
+          "windDirection": "101",
+          "date": "2021-06-25T07:20:42.138z"
         }
       ]
     },
@@ -47,7 +49,8 @@
           "temp": "8",
           "windspeed": "1",
           "pressure": "999",
-          "windDirection": "98"
+          "windDirection": "98",
+          "date": "2021-02-25T07:20:42.138z"
         },
         {
           "id": "07",
@@ -55,7 +58,24 @@
           "temp": "0.5",
           "windspeed": "3.5",
           "pressure": "1000",
-          "windDirection": "102"
+          "windDirection": "102",
+          "date": "2021-03-25T07:20:42.138z"
+        },
+        {
+          "id": "1e9fbde0-09a2-11ec-bcda-dde60a32e9cd",
+          "code": "200",
+          "temp": "",
+          "windspeed": "",
+          "pressure": "",
+          "windDirection": ""
+        },
+        {
+          "id": "42835d20-09a2-11ec-8999-b96029ff8e1f",
+          "code": "200",
+          "temp": "",
+          "windspeed": "12",
+          "pressure": "",
+          "windDirection": ""
         }
       ]
     }
