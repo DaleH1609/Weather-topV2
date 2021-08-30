@@ -2,6 +2,7 @@
 
 const logger = require("../utils/logger");
 const stationStore = require('../models/station-store.js');
+const stationAnalytics = require('../utils/station-analytics.js');
 const accounts = require ('./accounts.js');
 const uuid = require('uuid');
 
@@ -12,22 +13,21 @@ const dashboard = {
     const getAllStations = stationStore.getAllStations();
     const loggedInUser = accounts.getCurrentUser(request);
     const stations = stationStore.getUserStations(loggedInUser.id);
-    
-    for (let i =0; i < allStations.length; i++){
-      const station = allStations[i];
-      station.getMaxTemp
-      station.getMinTemp
-      station.geMaxPressure
-      station.geMinPressure
-      station.geMaxWindSpeed
-      station.geMinWindSpeed
-      station.windTrend
-      station.pressureTrend
-      station.tempTrend
-      station.getWeatherLatest
-      station.geWeatherIcon
-      station.celsiusToFahrenheit
-      station.windSpeedLatest
+    for (let i =0; i < getAllStations.length; i++){
+      const station = getAllStations[i];
+      station.getMaxTemp = stationAnalytics.getMaxTemp(station);
+      station.getMinTemp = stationAnalytics.getMaxTemp(station);
+      station.geMaxPressure = stationAnalytics.getMaxTemp(station);
+      station.geMinPressure = stationAnalytics.getMaxTemp(station);
+      station.geMaxWindSpeed = stationAnalytics.getMaxTemp(station);
+      station.geMinWindSpeed = stationAnalytics.getMaxTemp(station);
+      station.windTrend = stationAnalytics.getMaxTemp(station);
+      station.pressureTrend = stationAnalytics.getMaxTemp(station);
+      station.tempTrend = stationAnalytics.getMaxTemp(station);
+      station.getWeatherLatest = stationAnalytics.getMaxTemp(station);
+      station.geWeatherIcon = stationAnalytics.getMaxTemp(station);
+      station.celsiusToFahrenheit = stationAnalytics.getMaxTemp(station);
+      station.windSpeedLatest = stationAnalytics.getMaxTemp(station);
     }
     const viewData = {
       title: "Weather Top Dashboard",

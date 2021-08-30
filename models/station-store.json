@@ -1,12 +1,70 @@
 {
   "stationCollection": [
     {
-      "id": "463963a0-09cb-11ec-824a-1d980cde4c14",
+      "id": "01",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Woodstown",
-      "latitude": "45.61",
-      "longitude": "32.6",
-      "readings": []
+      "title": "Tramore",
+      "latitude": "52",
+      "longitude": "-7",
+      "readings": [
+        {
+          "id": "02",
+          "code": "800",
+          "temp": "0.5",
+          "windspeed": "3.5",
+          "pressure": "1002",
+          "windDirection": "90"
+        },
+        {
+          "id": "03",
+          "code": "600",
+          "temp": "6",
+          "windspeed": "2",
+          "pressure": "1004",
+          "windDirection": "96"
+        },
+        {
+          "id": "04",
+          "code": "700",
+          "temp": "8",
+          "windspeed": "1",
+          "pressure": "1005",
+          "windDirection": "101"
+        },
+        {
+          "id": "b1b924a0-09c9-11ec-a88d-0fa7c10a6339",
+          "code": "",
+          "temp": "",
+          "windspeed": "",
+          "pressure": "10007",
+          "windDirection": ""
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Dunmore",
+      "latitude": "52",
+      "longitude": "-6",
+      "readings": [
+        {
+          "id": "06",
+          "code": "700",
+          "temp": "8",
+          "windspeed": "1",
+          "pressure": "999",
+          "windDirection": "98"
+        },
+        {
+          "id": "07",
+          "code": "800",
+          "temp": "0.5",
+          "windspeed": "3.5",
+          "pressure": "1000",
+          "windDirection": "102"
+        }
+      ]
     }
   ]
 }
