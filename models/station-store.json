@@ -15,6 +15,15 @@
           "windspeed": "12",
           "pressure": "12",
           "windDirection": "12"
+        },
+        {
+          "id": "05f13e30-09cb-11ec-824a-1d980cde4c14",
+          "date": "2021-08-30T19:46:52.436Z",
+          "code": "-1",
+          "temp": "",
+          "windspeed": "",
+          "pressure": "",
+          "windDirection": ""
         }
       ]
     }

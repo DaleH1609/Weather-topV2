@@ -13,6 +13,7 @@ const stationStore = {
    return this.store.findAll(this.collection);
   },
   
+  
   removeAllStations(){
     this.store.removeAll(this.collection);
     this.store.save();
