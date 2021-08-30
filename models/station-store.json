@@ -1,81 +1,17 @@
 {
   "stationCollection": [
     {
-      "id": "01",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Tramore",
-      "latitude": "52",
-      "longitude": "-7",
-      "readings": [
-        {
-          "id": "02",
-          "code": "800",
-          "temp": "0.5",
-          "windspeed": "3.5",
-          "pressure": "1002",
-          "windDirection": "90",
-          "date": "2021-04-25T07:20:42.138z"
-        },
-        {
-          "id": "03",
-          "code": "600",
-          "temp": "6",
-          "windspeed": "2",
-          "pressure": "1004",
-          "windDirection": "96",
-          "date": "2021-05-25T07:20:42.138z"
-        },
-        {
-          "id": "04",
-          "code": "700",
-          "temp": "8",
-          "windspeed": "1",
-          "pressure": "1005",
-          "windDirection": "101",
-          "date": "2021-06-25T07:20:42.138z"
-        }
-      ]
-    },
-    {
-      "id": "05",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Dunmore",
-      "latitude": "52",
-      "longitude": "-6",
-      "readings": [
-        {
-          "id": "06",
-          "code": "700",
-          "temp": "8",
-          "windspeed": "1",
-          "pressure": "999",
-          "windDirection": "98",
-          "date": "2021-02-25T07:20:42.138z"
-        },
-        {
-          "id": "07",
-          "code": "800",
-          "temp": "0.5",
-          "windspeed": "3.5",
-          "pressure": "1000",
-          "windDirection": "102",
-          "date": "2021-03-25T07:20:42.138z"
-        },
-        {
-          "id": "2a202b30-09b3-11ec-9ebb-8111f0131279",
-          "date": "2021-08-30T16:56:05.220Z",
-          "code": "200",
-          "temp": "12",
-          "windspeed": "12",
-          "pressure": "12",
-          "windDirection": "12"
-        }
-      ]
-    },
-    {
       "id": "19b6c8f0-09b6-11ec-bfad-e314fe4bb845",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Bray",
+      "latitude": "",
+      "longitude": "",
+      "readings": []
+    },
+    {
+      "id": "546508b0-09b9-11ec-a412-ff93177c2518",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Tramore",
       "latitude": "",
       "longitude": "",
       "readings": []

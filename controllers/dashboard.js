@@ -8,12 +8,14 @@ const uuid = require('uuid');
 const dashboard = {
   index(request, response) {
     const stationId = request.params.id;
+    const title = request.params.title;
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
+    const getStationTitle = stationStore.getStationTitle(title);
     const stations = stationStore.getUserStations(loggedInUser.id);
     const viewData = {
       title: "Weather Top Dashboard",
-      stations: stations.sort(stations)
+      stations: stations.sort((a, b) => a.getStationTitle.localeCompare(b.getStationTitle))
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);

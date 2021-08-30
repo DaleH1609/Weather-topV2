@@ -18,6 +18,10 @@ const stationStore = {
     this.store.save();
   },
   
+  getStationTitle(title) {
+    return this.store.findOneBy(this.collection, { title: title });
+  },
+  
   removeReading(id, readingId){
    const station = this.getStation(id);
     const readings = station.readings;
