@@ -12,39 +12,28 @@ const dashboard = {
     logger.info("dashboard rendering");
     const getAllStations = stationStore.getAllStations();
     const loggedInUser = accounts.getCurrentUser(request);
+    const station = stationStore.getStation(stationId);
     const stations = stationStore.getUserStations(loggedInUser.id);
     for (let i =0; i < getAllStations.length; i++){
       const station = getAllStations[i];
       station.getMaxTemp = stationAnalytics.getMaxTemp(station);
-      station.getMinTemp = stationAnalytics.getMaxTemp(station);
-      station.geMaxPressure = stationAnalytics.getMaxTemp(station);
-      station.geMinPressure = stationAnalytics.getMaxTemp(station);
-      station.geMaxWindSpeed = stationAnalytics.getMaxTemp(station);
-      station.geMinWindSpeed = stationAnalytics.getMaxTemp(station);
-      station.windTrend = stationAnalytics.getMaxTemp(station);
-      station.pressureTrend = stationAnalytics.getMaxTemp(station);
-      station.tempTrend = stationAnalytics.getMaxTemp(station);
-      station.getWeatherLatest = stationAnalytics.getMaxTemp(station);
-      station.geWeatherIcon = stationAnalytics.getMaxTemp(station);
-      station.celsiusToFahrenheit = stationAnalytics.getMaxTemp(station);
-      station.windSpeedLatest = stationAnalytics.getMaxTemp(station);
+      station.getMinTemp = stationAnalytics.getMinTemp(station);
+      station.geMaxPressure = stationAnalytics.getMaxPressure(station);
+      station.geMinPressure = stationAnalytics.getMinPressure(station);
+      station.geMaxWindSpeed = stationAnalytics.getMaxWindspeed(station);
+      station.geMinWindSpeed = stationAnalytics.getMinWindspeed(station);
+      station.windTrend = stationAnalytics.windTrend(station);
+      station.pressureTrend = stationAnalytics.pressureTrend(station);
+      station.tempTrend = stationAnalytics.tempTrend(station);
+      station.getWeatherLatest = stationAnalytics.weatherLatest(station);
+      station.geWeatherIcon = stationAnalytics.weatherIcon(station);
+      station.celsiusToFahrenheit = stationAnalytics.celsiusToFahrenheit(station);
+      station.windSpeedLatest = stationAnalytics.windSpeedLatest(station);
     }
     const viewData = {
       title: "Weather Top Dashboard",
       stations: stations,
-      getMaxTemp: stationAnalytics.getMaxTemp(station),
-      station.getMinTemp = stationAnalytics.getMaxTemp(station);
-      station.geMaxPressure = stationAnalytics.getMaxTemp(station);
-      station.geMinPressure = stationAnalytics.getMaxTemp(station);
-      station.geMaxWindSpeed = stationAnalytics.getMaxTemp(station);
-      station.geMinWindSpeed = stationAnalytics.getMaxTemp(station);
-      station.windTrend = stationAnalytics.getMaxTemp(station);
-      station.pressureTrend = stationAnalytics.getMaxTemp(station);
-      station.tempTrend = stationAnalytics.getMaxTemp(station);
-      station.getWeatherLatest = stationAnalytics.getMaxTemp(station);
-      station.geWeatherIcon = stationAnalytics.getMaxTemp(station);
-      station.celsiusToFahrenheit = stationAnalytics.getMaxTemp(station);
-      station.windSpeedLatest = stationAnalytics.getMaxTemp(station);
+      station: station
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);

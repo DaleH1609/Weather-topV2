@@ -38,15 +38,6 @@
           "windspeed": "",
           "pressure": "10007",
           "windDirection": ""
-        },
-        {
-          "id": "46327e70-09ce-11ec-aac7-ad7ed70a2cf0",
-          "date": "2021-08-30T20:10:08.728Z",
-          "code": "200",
-          "temp": "",
-          "windspeed": "",
-          "pressure": "",
-          "windDirection": ""
         }
       ],
       "getMaxTemp": {
@@ -58,12 +49,12 @@
         "windDirection": "101"
       },
       "getMinTemp": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
+        "id": "b1b924a0-09c9-11ec-a88d-0fa7c10a6339",
+        "code": "",
+        "temp": "",
+        "windspeed": "",
+        "pressure": "10007",
+        "windDirection": ""
       },
       "geMaxPressure": {
         "id": "04",
@@ -74,85 +65,37 @@
         "windDirection": "101"
       },
       "geMinPressure": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
+        "id": "46327e70-09ce-11ec-aac7-ad7ed70a2cf0",
+        "date": "2021-08-30T20:10:08.728Z",
+        "code": "200",
+        "temp": "",
+        "windspeed": "",
+        "pressure": "",
+        "windDirection": ""
       },
       "geMaxWindSpeed": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
+        "id": "02",
+        "code": "800",
+        "temp": "0.5",
+        "windspeed": "3.5",
+        "pressure": "1002",
+        "windDirection": "90"
       },
       "geMinWindSpeed": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
+        "id": "b1b924a0-09c9-11ec-a88d-0fa7c10a6339",
+        "code": "",
+        "temp": "",
+        "windspeed": "",
+        "pressure": "10007",
+        "windDirection": ""
       },
-      "windTrend": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
-      },
-      "pressureTrend": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
-      },
-      "tempTrend": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
-      },
-      "getWeatherLatest": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
-      },
-      "geWeatherIcon": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
-      },
-      "celsiusToFahrenheit": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
-      },
-      "windSpeedLatest": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "1005",
-        "windDirection": "101"
-      }
+      "windTrend": "arrows alternate horizontal icon",
+      "pressureTrend": "arrow down icon",
+      "tempTrend": "arrows alternate horizontal icon",
+      "getWeatherLatest": "Partial Clouds",
+      "geWeatherIcon": "cloud sun icon",
+      "celsiusToFahrenheit": 32,
+      "windSpeedLatest": 0
     },
     {
       "id": "05",
@@ -187,12 +130,12 @@
         "windDirection": "98"
       },
       "getMinTemp": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
+        "id": "07",
+        "code": "800",
+        "temp": "0.5",
+        "windspeed": "3.5",
+        "pressure": "1000",
+        "windDirection": "102"
       },
       "geMaxPressure": {
         "id": "06",
@@ -203,20 +146,20 @@
         "windDirection": "98"
       },
       "geMinPressure": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
+        "id": "07",
+        "code": "800",
+        "temp": "0.5",
+        "windspeed": "3.5",
+        "pressure": "1000",
+        "windDirection": "102"
       },
       "geMaxWindSpeed": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
+        "id": "07",
+        "code": "800",
+        "temp": "0.5",
+        "windspeed": "3.5",
+        "pressure": "1000",
+        "windDirection": "102"
       },
       "geMinWindSpeed": {
         "id": "06",
@@ -226,62 +169,10 @@
         "pressure": "999",
         "windDirection": "98"
       },
-      "windTrend": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
-      },
-      "pressureTrend": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
-      },
-      "tempTrend": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
-      },
-      "getWeatherLatest": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
-      },
-      "geWeatherIcon": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
-      },
-      "celsiusToFahrenheit": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
-      },
-      "windSpeedLatest": {
-        "id": "06",
-        "code": "700",
-        "temp": "8",
-        "windspeed": "1",
-        "pressure": "999",
-        "windDirection": "98"
-      }
+      "getWeatherLatest": "Thunder",
+      "geWeatherIcon": "poo storm icon",
+      "celsiusToFahrenheit": 32,
+      "windSpeedLatest": 1
     }
   ]
 }
