@@ -30,14 +30,6 @@
           "windspeed": "1",
           "pressure": "1005",
           "windDirection": "101"
-        },
-        {
-          "id": "b1b924a0-09c9-11ec-a88d-0fa7c10a6339",
-          "code": "",
-          "temp": "",
-          "windspeed": "",
-          "pressure": "10007",
-          "windDirection": ""
         }
       ],
       "getMaxTemp": {

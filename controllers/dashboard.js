@@ -14,8 +14,16 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const station = stationStore.getStation(stationId);
     const stations = stationStore.getUserStations(loggedInUser.id);
-    for (let i =0; i < getAllStations.length; i++){
-      const station = getAllStations[i];
+    function compare( a, b ) {
+    if ( a.last_nom < b.last_nom ){
+    return -1;
+    }
+    if ( a.last_nom > b.last_nom ){
+    return 1;
+    }
+    return 0;
+    }
+    for (let station in stations){
       station.getMaxTemp = stationAnalytics.getMaxTemp(station);
       station.getMinTemp = stationAnalytics.getMinTemp(station);
       station.geMaxPressure = stationAnalytics.getMaxPressure(station);
@@ -32,8 +40,7 @@ const dashboard = {
     }
     const viewData = {
       title: "Weather Top Dashboard",
-      stations: stations,
-      station: station
+      stations: stations.sort(compare)
     };
     logger.info('about to render', stationStore.getAllStations());
     response.render("dashboard", viewData);
