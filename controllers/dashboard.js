@@ -14,15 +14,6 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const station = stationStore.getStation(stationId);
     const stations = stationStore.getUserStations(loggedInUser.id);
-    function compare( a, b ) {
-    if ( a.stationTitle < b.stationTitle){
-    return -1;
-    }
-    if ( a.stationTitle > b.stationTitle ){
-    return 1;
-    }
-    return 0;
-    }
     /*
     for (let station in stations){
       station.getMaxTemp = stationAnalytics.getMaxTemp(station);
