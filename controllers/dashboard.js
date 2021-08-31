@@ -14,23 +14,6 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const station = stationStore.getStation(stationId);
     const stations = stationStore.getUserStations(loggedInUser.id);
-    /*
-    for (let station in stations){
-      station.getMaxTemp = stationAnalytics.getMaxTemp(station);
-      station.getMinTemp = stationAnalytics.getMinTemp(station);
-      station.geMaxPressure = stationAnalytics.getMaxPressure(station);
-      station.geMinPressure = stationAnalytics.getMinPressure(station);
-      station.geMaxWindSpeed = stationAnalytics.getMaxWindspeed(station);
-      station.geMinWindSpeed = stationAnalytics.getMinWindspeed(station);
-      station.windTrend = stationAnalytics.windTrend(station);
-      station.pressureTrend = stationAnalytics.pressureTrend(station);
-      station.tempTrend = stationAnalytics.tempTrend(station);
-      station.getWeatherLatest = stationAnalytics.weatherLatest(station);
-      station.geWeatherIcon = stationAnalytics.weatherIcon(station);
-      station.celsiusToFahrenheit = stationAnalytics.celsiusToFahrenheit(station);
-      station.windSpeedLatest = stationAnalytics.windSpeedLatest(station);
-    }
-    */
     const viewData = {
       title: "Weather Top Dashboard",
       stations: stationStore.getUserStations(loggedInUser.id)
