@@ -25,6 +25,31 @@ const accounts = {
     response.redirect('/');
   },
 
+  updateUser(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const user = loggedInUser.email;
+    const updatedUser = {
+      firstName: request.body.firstName,
+      lastName: request.body.lastName,
+      email: request.body.email,
+      password: request.body.password,
+    };
+    userstore.updateUser(loggedInUser, updatedUser);
+    response.redirect('/dashboard')
+  },
+
+  getUser(request, response){
+    const loggedInUser = accounts.getCurrentUser(request);
+
+    const viewData = {
+      firstName: loggedInUser.firstName,
+      lastName: loggedInUser.lastName,
+      email: loggedInUser.email,
+      password: loggedInUser.password,
+    };
+    response.render("user", viewData);
+  },
+
   signup(request, response) {
     const viewData = {
       title: 'Login to the Service',
