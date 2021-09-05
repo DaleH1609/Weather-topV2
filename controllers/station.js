@@ -12,6 +12,7 @@ const station = {
     const stationId = request.params.id;
     logger.debug('Station id = ' + stationId)
     const station = stationStore.getStation(stationId);
+    const title = request.params.title;
     const latestTemp = stationAnalytics.getLatestTemp(station);
     const latestPressure = stationAnalytics.getLatestPressure(station);
     const celciusToFahrenheit = stationAnalytics.celsiusToFahrenheit(station);
@@ -30,27 +31,25 @@ const station = {
     const weatherIcon = stationAnalytics.weatherIcon(station);
     const weatherLatest = stationAnalytics.weatherLatest(station);
     const viewData = {
-      title: 'Station',
-      station: stationStore.getStation(stationId),
-      stationSummary : {
-        latestTemp: stationAnalytics.getLatestTemp(station),
-        latestPressure: stationAnalytics.getLatestPressure(station),
-        celsiusToFahrenheit: stationAnalytics.celsiusToFahrenheit(station),
-        windSpeedLatest: stationAnalytics.windSpeedLatest(station),
-        windCompass: stationAnalytics.windCompass(station),
-        getMinTemp: stationAnalytics.getMinTemp(station),
-        getMaxTemp: stationAnalytics.getMaxTemp(station),
-        getMaxPressure: stationAnalytics.getMaxPressure(station),
-        getMinPressure: stationAnalytics.getMinPressure(station),
-        getMaxWindspeed: stationAnalytics.getMaxWindspeed(station),
-        getMinWindspeed: stationAnalytics.getMinWindspeed(station),
-        chillLatest: stationAnalytics.chillLatest(station),
-        windTrend: stationAnalytics.windTrend(station),
-        tempTrend: stationAnalytics.tempTrend(station),
-        pressureTrend: stationAnalytics.pressureTrend(station),
-        weatherLatest: stationAnalytics.weatherLatest(station),
-        weatherIcon: stationAnalytics.weatherIcon(station)
-      }
+          title: title,
+          station: stationStore.getStation(stationId),
+          latestTemp: stationAnalytics.getLatestTemp(station),
+          latestPressure: stationAnalytics.getLatestPressure(station),
+          celsiusToFahrenheit: stationAnalytics.celsiusToFahrenheit(station),
+          windSpeedLatest: stationAnalytics.windSpeedLatest(station),
+          windCompass: stationAnalytics.windCompass(station),
+          getMinTemp: stationAnalytics.getMinTemp(station),
+          getMaxTemp: stationAnalytics.getMaxTemp(station),
+          getMaxPressure: stationAnalytics.getMaxPressure(station),
+          getMinPressure: stationAnalytics.getMinPressure(station),
+          getMaxWindspeed: stationAnalytics.getMaxWindspeed(station),
+          getMinWindspeed: stationAnalytics.getMinWindspeed(station),
+          chillLatest: stationAnalytics.chillLatest(station),
+          windTrend: stationAnalytics.windTrend(station),
+          tempTrend: stationAnalytics.tempTrend(station),
+          pressureTrend: stationAnalytics.pressureTrend(station),
+          weatherLatest: stationAnalytics.weatherLatest(station),
+          weatherIcon: stationAnalytics.weatherIcon(station)
     };
     response.render('station', viewData);
   },

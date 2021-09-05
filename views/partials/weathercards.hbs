@@ -1,81 +1,81 @@
 <div class="ui inverted five stackable cards">
-    <div class="card">
-        <div class="content">
-            <div class="header">{{station.title}}<i class="big purple right floated binoculars icon"></i> </div>
-            <div class="meta">
-              <br>
-              Lat: {{station.latitude}}
-              <br>
-              Lng: {{station.longitude}}
-            </div>
-        </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">{{station.title}}{{title}}<i class="big purple right floated binoculars icon"></i> </div>
+      <div class="meta">
+        <br>
+        Lat:  {{station.latitude}}{{latitude}}
+        <br>
+        Lng:  {{station.longitude}}{{longitude}}
+      </div>
     </div>
-    <div class="card">
-        <div class="content">
-            <div class="header">Weather<i class="big red right floated umbrella icon"></i></div>
-            <div class="meta">
-              <br>
-              <br>
-              {{stationSummary.weatherLatest}}
-              <br>
-              <br>
-              <br>
-              <i class="huge yellow {{stationSummary.weatherIcon}}"></i>
-            </div>
-        </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">Weather<i class="big red right floated umbrella icon"></i></div>
+      <div class="meta">
+        <br>
+        <br>
+        {{weatherLatest}}
+        <br>
+        <br>
+        <br>
+        <i class="huge yellow {{weatherIcon}}"></i>
+      </div>
     </div>
-    <div class="card">
-        <div class="content">
-            <div class="header">Temp <i class="big blue right floated temperature high icon"></i></div>
-            <div class="meta">
-              <br>
-              {{stationSummary.latestTemp}}C
-              <br>
-              {{stationSummary.celsiusToFahrenheit}} F
-              <br>
-              Min: {{stationSummary.getMinTemp.temp}} C
-              <br>
-              Max: {{stationSummary.getMaxTemp.temp}} C
-              <br>
-              Trend: <i class="big blue {{stationSummary.tempTrend}}"></i>
-              <br>
-            </div>
-        </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">Temp <i class="big blue right floated temperature high icon"></i></div>
+      <div class="meta">
+        <br>
+        {{latestTemp}}C
+        <br>
+        {{celsiusToFahrenheit}} F
+        <br>
+        Min: {{getMinTemp.temp}} C
+        <br>
+        Max: {{getMaxTemp.temp}} C
+        <br>
+        Trend: <i class="big blue {{tempTrend}}"></i>
+        <br>
+      </div>
     </div>
-    <div class="card">
-        <div class="content">
-            <div class="header">Wind<i class="big green right floated wind icon"></i></div>
-            <div class="meta">
-              <br>
-                {{stationSummary.windSpeedLatest}} bft
-              <br>
-               {{stationSummary.windCompass}}
-              <br>
-             Max: {{stationSummary.getMaxWindspeed.windspeed}}
-              <br>
-             Min: {{stationSummary.getMinWindspeed.windspeed}}
-              <br>
-              Feels like:
-              <br> 
-                  {{stationSummary.chillLatest}}
-              <br> 
-                Trend: <i class="big green {{stationSummary.windTrend}}"></i>
-            </div>
-        </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">Wind<i class="big green right floated wind icon"></i></div>
+      <div class="meta">
+        <br>
+        {{windSpeedLatest}} bft
+        <br>
+        {{windCompass}}
+        <br>
+        Max: {{getMaxWindspeed.windspeed}}
+        <br>
+        Min: {{getMinWindspeed.windspeed}}
+        <br>
+        Feels like:
+        <br>
+        {{chillLatest}}
+        <br>
+        Trend: <i class="big green {{windTrend}}"></i>
+      </div>
     </div>
-    <div class="card">
-        <div class="content">
-            <div class="header">Pressure <i class="big orange right floated compress icon"></i></div>
-            <div class="meta">
-              <br>
-              {{stationSummary.latestPressure}} hpa
-              <br>
-             Max: {{stationSummary.getMaxPressure.pressure}} 
-              <br>
-             Min: {{stationSummary.getMinPressure.pressure}} 
-              <br>
-             Trend: <i class="big orange {{stationSummary.pressureTrend}}""></i>
-            </div>
-          </div>
-        </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">Pressure <i class="big orange right floated compress icon"></i></div>
+      <div class="meta">
+        <br>
+        {{latestPressure}} hpa
+        <br>
+        Max: {{getMaxPressure.pressure}}
+        <br>
+        Min: {{getMinPressure.pressure}}
+        <br>
+        Trend: <i class="big orange {{pressureTrend}}""></i>
+      </div>
     </div>
+  </div>
+</div>
