@@ -187,7 +187,7 @@ const stationAnalytics = {
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-      windCompass = station.readings[station.readings.length-1].winddirection;
+      windCompass = station.readings[station.readings.length-1].windDirection;
       if (windCompass >= 348.77 && windCompass <= 11.25){
         return 'North';
       }
