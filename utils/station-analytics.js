@@ -87,7 +87,7 @@ const stationAnalytics = {
       station.readings.length > 0){
        chillLatest = ((13.12 + (0.6215 * cTemp) - (11.37 * (Math.pow(windSpeed, 0.16))) + ((0.3965 * cTemp) + (Math.pow(windSpeed,0.16)))))
        cTemp = station.readings[station.readings.length-1].temp;
-       windSpeed = station.readings[station.readings.length-1].windspeed;
+       windSpeed = station.readings[station.readings.length-1].windSpeed;
     }
     return chillLatest;
   },
@@ -159,7 +159,7 @@ const stationAnalytics = {
       station.readings.length > 0) {
       minWindspeed = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].windspeed < minWindspeed.windspeed) {
+        if (station.readings[i].windSpeed < minWindspeed.windSpeed) {
           minWindspeed = station.readings[i];
         }
       }
@@ -174,7 +174,7 @@ const stationAnalytics = {
       station.readings.length > 0) {
       maxWindspeed = station.readings[0];
       for (let i = 1; i < station.readings.length; i++) {
-        if (station.readings[i].windspeed > maxWindspeed.windspeed) {
+        if (station.readings[i].windSpeed > maxWindspeed.windSpeed) {
           maxWindspeed = station.readings[i];
         }
       }
@@ -244,7 +244,7 @@ const stationAnalytics = {
     if (station != undefined &&
       station.readings != undefined &&
       station.readings.length > 0){
-      windSpeed = station.readings[station.readings.length-1].windspeed;
+      windSpeed = station.readings[station.readings.length-1].windSpeed;
       if (windSpeed <=1 ){
         return 0;
       }
@@ -308,9 +308,9 @@ const stationAnalytics = {
    if(station != undefined &&
       station.readings != undefined &&
       station.readings.length >= 3){
-    let Trend1 = station.readings[station.readings.length-1].windspeed;
-    let Trend2 = station.readings[station.readings.length-2].windspeed;
-    let Trend3 = station.readings[station.readings.length-3].windspeed;
+    let Trend1 = station.readings[station.readings.length-1].windSpeed;
+    let Trend2 = station.readings[station.readings.length-2].windSpeed;
+    let Trend3 = station.readings[station.readings.length-3].windSpeed;
     if(Trend1 > Trend2 && Trend2 > Trend3){
       return "arrow up icon";
     }

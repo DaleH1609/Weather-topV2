@@ -12,6 +12,20 @@ const stationStore = {
  getAllStations() {
    return this.store.findAll(this.collection);
   },
+
+  getLongitude(id, reading){
+    const station = this.getStation(id);
+    const readings = station.readings;
+    var lng = station.longitude;
+    return lng;
+  },
+
+  getLatitude(id, reading){
+    const station = this.getStation(id);
+    const readings = station.readings;
+    var lat = station.latitude;
+    return lat
+  },
   
   
   removeAllStations(){
