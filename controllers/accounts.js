@@ -35,7 +35,7 @@ const accounts = {
       password: request.body.password,
     };
     userstore.updateUser(loggedInUser, updatedUser);
-    response.redirect('/dashboard')
+    response.redirect('/')
   },
 
   getUser(request, response){
