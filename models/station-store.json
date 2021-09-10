@@ -4,8 +4,8 @@
       "id": "01",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Tramore",
-      "latitude": "52",
-      "longitude": "-7",
+      "latitude": "52.1623500",
+      "longitude": "-7.1524400",
       "readings": [
         {
           "id": "02",
@@ -33,89 +33,15 @@
           "pressure": "1005",
           "windDirection": "101",
           "date": "2021-06-25T07:20:42.138z"
-        },
-        {
-          "id": "9fd6c0e0-1175-11ec-b598-2d9f2a542f13",
-          "date": "2021-09-09T13:55:43.216Z",
-          "code": 803,
-          "temp": 19.15,
-          "windSpeed": 4.14,
-          "pressure": 1004,
-          "windDirection": 220
         }
-      ],
-      "latestTemp": "8",
-      "latestPressure": "1005",
-      "celsiusToFahrenheit": 32,
-      "windSpeedLatest": 0,
-      "windCompass": "East",
-      "getMinTemp": {
-        "id": "02",
-        "code": "800",
-        "temp": "0.5",
-        "windSpeed": "3.5",
-        "pressure": "1002",
-        "windDirection": "90",
-        "date": "2021-04-25T07:20:42.138z"
-      },
-      "getMaxTemp": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windSpeed": "1",
-        "pressure": "1005",
-        "windDirection": "101",
-        "date": "2021-06-25T07:20:42.138z"
-      },
-      "getMaxPressure": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windSpeed": "1",
-        "pressure": "1005",
-        "windDirection": "101",
-        "date": "2021-06-25T07:20:42.138z"
-      },
-      "getMinPressure": {
-        "id": "02",
-        "code": "800",
-        "temp": "0.5",
-        "windSpeed": "3.5",
-        "pressure": "1002",
-        "windDirection": "90",
-        "date": "2021-04-25T07:20:42.138z"
-      },
-      "getMaxWindspeed": {
-        "id": "02",
-        "code": "800",
-        "temp": "0.5",
-        "windSpeed": "3.5",
-        "pressure": "1002",
-        "windDirection": "90",
-        "date": "2021-04-25T07:20:42.138z"
-      },
-      "getMinWindspeed": {
-        "id": "04",
-        "code": "700",
-        "temp": "8",
-        "windSpeed": "1",
-        "pressure": "1005",
-        "windDirection": "101",
-        "date": "2021-06-25T07:20:42.138z"
-      },
-      "chillLatest": 13.12,
-      "windTrend": "arrow down icon",
-      "tempTrend": "arrow up icon",
-      "pressureTrend": "arrow up icon",
-      "weatherIcon": "snowflake icon",
-      "weatherLatest": "Snow"
+      ]
     },
     {
       "id": "05",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Dunmore",
-      "latitude": "53.6",
-      "longitude": "8.7",
+      "latitude": "52.1499994",
+      "longitude": "-6.9833294",
       "readings": [
         {
           "id": "06",
@@ -135,69 +61,7 @@
           "windDirection": "96",
           "date": "2021-05-25T07:20:42.138z"
         }
-      ],
-      "latestTemp": "12",
-      "latestPressure": "1004",
-      "celsiusToFahrenheit": 32,
-      "windSpeedLatest": 1,
-      "windCompass": "East",
-      "getMinTemp": {
-        "id": "06",
-        "code": "700",
-        "temp": "0.5",
-        "windSpeed": "3.5",
-        "pressure": "1002",
-        "windDirection": "90",
-        "date": "2021-04-25T07:20:42.138z"
-      },
-      "getMaxTemp": {
-        "id": "07",
-        "code": "600",
-        "temp": "12",
-        "windSpeed": "2",
-        "pressure": "1004",
-        "windDirection": "96",
-        "date": "2021-05-25T07:20:42.138z"
-      },
-      "getMaxPressure": {
-        "id": "07",
-        "code": "600",
-        "temp": "12",
-        "windSpeed": "2",
-        "pressure": "1004",
-        "windDirection": "96",
-        "date": "2021-05-25T07:20:42.138z"
-      },
-      "getMinPressure": {
-        "id": "06",
-        "code": "700",
-        "temp": "0.5",
-        "windSpeed": "3.5",
-        "pressure": "1002",
-        "windDirection": "90",
-        "date": "2021-04-25T07:20:42.138z"
-      },
-      "getMaxWindspeed": {
-        "id": "06",
-        "code": "700",
-        "temp": "0.5",
-        "windSpeed": "3.5",
-        "pressure": "1002",
-        "windDirection": "90",
-        "date": "2021-04-25T07:20:42.138z"
-      },
-      "getMinWindspeed": {
-        "id": "07",
-        "code": "600",
-        "temp": "12",
-        "windSpeed": "2",
-        "pressure": "1004",
-        "windDirection": "96",
-        "date": "2021-05-25T07:20:42.138z"
-      },
-      "chillLatest": 13.12,
-      "weatherIcon": "cloud rain icon",
-      "weatherLatest": "Rain"
+      ]
     }
   ]
 }

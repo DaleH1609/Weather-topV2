@@ -62,7 +62,7 @@ const station = {
       date: new Date().toISOString(),
       code: request.body.code,
       temp: request.body.temp,
-      windspeed: request.body.windspeed,
+      windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
       windDirection: request.body.windDirection,
     };
