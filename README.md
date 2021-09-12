@@ -1,7 +1,7 @@
-Welcome to the Glitch Template
+Welcome to the Weather Top V2
 ==============================
 
-A starter project for learning Glitch.
+A starter project for learning Javascript.
 
-This is an Express.js project, designed to work well with the Glitch development environment. It includes basic express setup, templating, routing, JSON based model and session support.
+Getting the grips of JavaScript by creating a weather station web app allowing users to create, delete, add weather stations to their liking.
 
